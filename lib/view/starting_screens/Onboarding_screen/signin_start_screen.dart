@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+import '../../../controller/Widgets/Mian_button.dart';
+import '../../../controller/Widgets/Skip_button.dart';
+import '../../../controller/Widgets/Textwidget.dart';
+import '../../../controller/constant/appImages/appImages.dart';
 
 class SinginStartScreen extends StatefulWidget {
   const SinginStartScreen({super.key});

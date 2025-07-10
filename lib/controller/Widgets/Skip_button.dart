@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'Textwidget.dart';
 class Skipbutton extends StatelessWidget {
   final String text;
   final double fontsize;
