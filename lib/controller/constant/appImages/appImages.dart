@@ -10,4 +10,25 @@ class Appimages{
   static const String onboarding3_ ='lib/assets/onboarding3_2.png';
   static const String onboarding4_1 ='lib/assets/onboarding4_1.png';
   static const String onboarding4_2 ='lib/assets/onboarding4_2.png';
+
+
+
+
+
+
+
+
+
+
+
+  
+  static String onbr1='assets/onb1.png';
+  static String onbr2='assets/onb2.png';
+  static String onbr3='assets/onb3.png';
+  static String onbr4='assets/onb4.png';
+  static String onbr5='assets/onb5.png';
+  static String onbr6='assets/onb6.png';
+  static String onbr7='assets/onb7.png';
+  static String onbr8='assets/onb8.png';
+
 }
