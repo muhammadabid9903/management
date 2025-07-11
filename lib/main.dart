@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
+import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyOnb1(),
+      home: Practice(),
     );
   }
 }

@@ -14,7 +14,8 @@ class Skipbutton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: (){},
-      child: Container(
+      child:
+      Container(
         width: MediaQuery.of(context).size.width*0.8,
         height: 48,
         decoration: BoxDecoration(
