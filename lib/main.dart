@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:management/view/onbardings/onboarding_1.dart';
+import 'package:management/view/signIn_screens/signin_screen1.dart';
+import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -32,7 +34,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Onboarding1(),
+      home: SigninScreen1(),
     );
   }
 }
