@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:management/controller/Widgets/Textwidget.dart';
+import 'package:management/controller/Widgets/mian_button.dart';
+import 'package:management/controller/Widgets/skip_button.dart';
+import 'package:management/controller/constant/appImages/appImages.dart';
 
 import '../../../controller/Widgets/Mian_button.dart';
 import '../../../controller/Widgets/Skip_button.dart';

@@ -10,6 +10,8 @@ class Appimages{
   static const String onboarding3_ ='lib/assets/onboarding3_2.png';
   static const String onboarding4_1 ='lib/assets/onboarding4_1.png';
   static const String onboarding4_2 ='lib/assets/onboarding4_2.png';
+  static const String signin_background ='lib/assets/signin_background.png';
+  static const String signin_background_image ='lib/assets/signin_background_image.png';
 
 
 

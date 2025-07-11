@@ -1,5 +1,6 @@
 import 'package:flutter/animation.dart';
 
+
 class Appcolors{
   static Color maincolor=Color(0xff5B2ED4);
   static Color onbmaintext=Color(0xff101828);
@@ -10,4 +11,5 @@ class Appcolors{
   static Color signinsuccesssubcontainer=Color(0xffF95555);
   static Color entertext=Color(0xff98A2B3);
   static Color profcontainer=Color(0xffF4F6F9);
+  static Color signin_color=Color(0xfffefefe);
 }

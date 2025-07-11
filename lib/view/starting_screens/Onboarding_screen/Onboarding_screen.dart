@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../controller/Widgets/Mian_button.dart';
-import '../../../controller/Widgets/Skip_button.dart';
+import '../../../controller/Widgets/mian_button.dart';
+import '../../../controller/Widgets/skip_button.dart';
 import '../../../controller/Widgets/Textwidget.dart';
 import '../../../controller/constant/appImages/appImages.dart';
 class MyOnb1 extends StatefulWidget {
