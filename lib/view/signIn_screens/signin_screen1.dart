@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/mian_button.dart';
 import 'package:management/controller/constant/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
@@ -13,6 +14,7 @@ class SigninScreen1 extends StatefulWidget {
 }
 
 class _SigninScreen1State extends State<SigninScreen1> {
+   bool  ischecked=false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,7 +69,7 @@ class _SigninScreen1State extends State<SigninScreen1> {
                         ),
                         Container(
                           height: 47,
-                          width: MediaQuery.of(context).size.width*0.8,
+                          width: MediaQuery.of(context).size.width*0.85,
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.black26,
@@ -101,7 +103,7 @@ class _SigninScreen1State extends State<SigninScreen1> {
                         ),
                         Container(
                           height: 47,
-                          width: MediaQuery.of(context).size.width*0.8,
+                          width: MediaQuery.of(context).size.width*0.85,
                           decoration: BoxDecoration(
                             border: Border.all(
                               color: Colors.black26,
@@ -125,8 +127,57 @@ class _SigninScreen1State extends State<SigninScreen1> {
                             )
 
                         ),
-                        SizedBox(height: 50,),
-                        MainButton(color: Color(0xff7544fc), fontsize: 13, text:'Signin', ),
+                        Row(
+                          children: [
+                          SizedBox(width: 20,),
+                    Checkbox(value: ischecked, onChanged: (bool? value){
+                      setState(() {
+                        ischecked=value!;
+                      });
+                    },
+                    ) ,
+
+                            Text('Remember me',style: GoogleFonts.poppins(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 12,
+                              color: Colors.black87,
+                            ),),
+                            SizedBox(width: 40,),
+                            Text('Forgot Password',style: GoogleFonts.poppins(
+                              fontSize: 11,
+                              fontWeight: FontWeight.w400,
+                              color: Color(0xff7a5af8),
+                            ),)
+                          ],
+                        ),
+                        SizedBox(height: 30,),
+                        MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
+                        SizedBox(height: 30,),
+                        Row(
+                          children: [
+                            SizedBox(width: 40,),
+                            Container(
+                              height: 1,
+                              width: 118,
+                              color: Colors.black54,
+                            ),
+                            SizedBox(width: 10,),
+                            Text('OR',style: GoogleFonts.poppins(
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                                color: Colors.black54,
+                            ),),
+                            SizedBox(width: 10,),
+                            Container(
+                              height: 1,
+                              width: 118,
+                              color: Colors.black54,
+                            ),
+                            SizedBox(width: 40,)
+                          ],
+                        ),
+                        SizedBox(height: 20,),
+                        Skipbutton(text: '', fontsize: 13, color: Color(0xffffffff)),
                       ],
                     ),
                   ),
