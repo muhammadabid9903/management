@@ -24,6 +24,23 @@ class _MainButtonState extends State<MainButton> {
 
 
   Widget build(BuildContext context) {
+<<<<<<< HEAD:lib/controller/Widgets/Mian_button.dart
+    return Container(
+      width: MediaQuery.of(context).size.width*0.8,
+      height: 48,
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(100),
+          gradient: LinearGradient(
+              colors: [
+                Color(0xff8862F2),
+                Color(0xff7544FC),
+                Color(0xff5B2ED4),
+              ]
+          )
+      ),
+      child: Center(
+        child: Mytextwidget(fontcolor: widget.color, fontsize: widget.fontsize, text: widget.text,fontWeight:widget.fontWeight ,),
+=======
     return InkWell(
       onTap: (){
         // for movement form one scren to another-----------------
@@ -46,6 +63,7 @@ class _MainButtonState extends State<MainButton> {
             fontsize: widget.fontsize,
             text: widget.text,fontWeight:widget.fontWeight ,),
         ),
+>>>>>>> f0409c7b4e6d67c2e4707f1ed238ee87e4e606cd:lib/controller/Widgets/mian_button.dart
       ),
     );
   }
