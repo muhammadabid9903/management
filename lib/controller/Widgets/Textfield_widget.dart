@@ -18,21 +18,23 @@ class _TextfieldWidgetState extends State<TextfieldWidget> {
   Widget build(BuildContext context) {
     return
       Container(
-      width: MediaQuery.of(context).size.width*0.8,
-      height: 44,
+      width: MediaQuery.of(context).size.width*0.9,
+      height: 50,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(8),
         border: Border.all(color: Appcolors.entertext),
+        color: Color(0xffF7F8FB)
       ),
       child: TextFormField(
         controller: emailcontroller,
         decoration: InputDecoration(
-          contentPadding: EdgeInsets.only(left: 10,top: 8),
+          contentPadding: EdgeInsets.only(left: 10,top: 10),
           border: InputBorder.none,
           prefixIcon: widget.prefixicon,
           hintText: widget.hinttext,
           hintStyle: GoogleFonts.inter(
             color: Appcolors.entertext,
+            fontSize: 14,
 
           )
 

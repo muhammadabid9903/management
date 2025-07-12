@@ -17,12 +17,6 @@ class Appimages{
 
 
 
-
-
-
-
-
-
   
   static String onbr1='assets/onb1.png';
   static String onbr2='assets/onb2.png';
@@ -32,5 +26,6 @@ class Appimages{
   static String onbr6='assets/onb6.png';
   static String onbr7='assets/onb7.png';
   static String onbr8='assets/onb8.png';
+  static String topimg='assets/topimg.png';
 
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:management/view/signIn_screens/Sign_up_screens/Sign_up1.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
@@ -35,11 +36,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-<<<<<<< HEAD
-      home: Practice(),
-=======
-      home: SigninScreen1(),
->>>>>>> f0409c7b4e6d67c2e4707f1ed238ee87e4e606cd
+
+      home: SignUp1(),
     );
   }
 }

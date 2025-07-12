@@ -20,15 +20,18 @@ class _PassTextfieldWidgetState extends State<PassTextfieldWidget> {
   Widget build(BuildContext context) {
     TextEditingController passwordcontroller=TextEditingController();
     return Container(
-      width: MediaQuery.of(context).size.width*0.8,
-      height: 44,
+      width: MediaQuery.of(context).size.width*0.9,
+      height: 50,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: Appcolors.entertext),
+        color: Appcolors.textfieldbg,
       ),
       child: TextFormField(
         controller: passwordcontroller,
         decoration: InputDecoration(
+          contentPadding: EdgeInsets.only(top: 10,left: 10),
+          border: InputBorder.none,
             suffixIcon: widget.suffixicon,
             hintText: widget.hinttext,
             hintStyle: GoogleFonts.inter(

@@ -12,4 +12,6 @@ class Appcolors{
   static Color entertext=Color(0xff98A2B3);
   static Color profcontainer=Color(0xffF4F6F9);
   static Color signin_color=Color(0xfffefefe);
+  static Color bgcolor=Color(0xffF4F4FA );
+  static Color textfieldbg= Color(0xffF7F8FB);
 }

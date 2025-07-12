@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:management/controller/Widgets/Textwidget.dart';
-import 'package:management/controller/Widgets/mian_button.dart';
-import 'package:management/controller/Widgets/skip_button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 
 import '../../../controller/Widgets/Mian_button.dart';
 import '../../../controller/Widgets/Skip_button.dart';
-import '../../../controller/Widgets/Textwidget.dart';
-import '../../../controller/constant/appImages/appImages.dart';
+
 
 class SinginStartScreen extends StatefulWidget {
   const SinginStartScreen({super.key});
@@ -29,7 +26,7 @@ class _SinginStartScreenState extends State<SinginStartScreen> {
             children: [
               SizedBox(height: 20,),
               SizedBox(height: 30,),
-              MainButton(color: Colors.white, fontsize: 14, text: 'Sign in',fontWeight: FontWeight.bold,),
+             MainButton(color: Colors.white, fontsize: 14, text: 'Sign in',fontWeight:FontWeight.bold),
               SizedBox(height: 15,),
               Skipbutton(text: 'Sign up', fontsize: 14, color:Color(0xff5B2ED4), )
             ],
