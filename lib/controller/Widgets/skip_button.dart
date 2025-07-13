@@ -17,7 +17,7 @@ class Skipbutton extends StatelessWidget {
       onTap: (){},
       child:
       Container(
-        width: MediaQuery.of(context).size.width*0.8,
+        width: MediaQuery.of(context).size.width*0.9,
         height: 48,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
