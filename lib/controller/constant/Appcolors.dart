@@ -14,4 +14,5 @@ class Appcolors{
   static Color signin_color=Color(0xfffefefe);
   static Color bgcolor=Color(0xffF4F4FA );
   static Color textfieldbg= Color(0xffF7F8FB);
+  static Color outlinecolor= Color(0xff7A5AF8);
 }

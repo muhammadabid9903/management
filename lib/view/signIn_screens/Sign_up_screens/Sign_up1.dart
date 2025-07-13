@@ -14,9 +14,12 @@ class SignUp1 extends StatefulWidget {
 }
 
 class _SignUp1State extends State<SignUp1> {
+  bool check=false;
+  bool isHide=true;
+  bool isHide2=true;
   @override
   Widget build(BuildContext context) {
-    bool? option2=false;
+
     return Scaffold(
       backgroundColor: Color(0xffF4F4FA ),
       body: Column(
@@ -68,7 +71,20 @@ class _SignUp1State extends State<SignUp1> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: PassTextfieldWidget(hinttext: 'Enter Your Password', suffixicon: ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,), prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
+              child:
+              PassTextfieldWidget(hinttext: 'Enter Your Password',
+                //  obscuretext: isHide,
+                  suffixicon: IconButton(onPressed: (){
+                    if(isHide==true){
+                      isHide=false;
+                    }
+                    else{isHide=true;}
+
+
+                    setState(() {
+                    });
+                  }, icon: isHide?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
+                  , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
@@ -77,25 +93,65 @@ class _SignUp1State extends State<SignUp1> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: PassTextfieldWidget(hinttext: 'Confirm My Password', suffixicon: ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,), prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
+              child:
+              PassTextfieldWidget(hinttext: 'Enter Your Password',
+                 // obscuretext: isHide,
+                  suffixicon: IconButton(onPressed: (){
+                    if(isHide2==true){
+                      isHide2=false;
+                    }
+                    else{isHide2=true;}
+
+
+                    setState(() {
+                    });
+                  }, icon: isHide2?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
+                  , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
+          SizedBox(height: 10,),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(left: 15),
             child: Row(
               children: [
                 Checkbox(
-                    activeColor: Appcolors.maincolor,
+                  side: BorderSide(color: Appcolors.maincolor),
                     shape: RoundedRectangleBorder(
-
-                      borderRadius: BorderRadius.circular(4),
+                      borderRadius: BorderRadius.circular(4)
                     ),
-                    value: option2,
-                    onChanged: (value){
-                      option2=value!;
-                      setState((){});
-                    }),
+                    activeColor: Appcolors.maincolor,
+                    value: check,
+                    onChanged: ((value){
+                      check=value!;
+                      setState(() {
+
+                      });
+                    })),
+                Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'I agree with ',fontWeight: FontWeight.w600,),
+                Mytextwidget(fontcolor:Appcolors.maincolor, fontsize: 12, text: 'terms & conditions ',fontWeight: FontWeight.w600,),
+                Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'and ',fontWeight: FontWeight.w600,),
+                Mytextwidget(fontcolor:Appcolors.maincolor, fontsize: 12, text: 'privacy policy',fontWeight:FontWeight.w600,),
+
               ],
             ),
+          ),
+          SizedBox(height: 20,),
+          Align(
+            alignment: Alignment.center,
+            child: MainButton(color: Colors.white, fontsize: 16, text: 'Sign up',fontWeight: FontWeight.bold,),
+          ),
+          SizedBox(height: 20,),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Already have an account? ',fontWeight: FontWeight.bold,),
+              TextButton(onPressed: (){},
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    minimumSize: Size(0,0)
+                  ), child:Mytextwidget(fontcolor: Appcolors.maincolor, fontsize: 12, text: 'Sign in',fontWeight: FontWeight.bold) ),
+            ],
           )
+
 
 
 

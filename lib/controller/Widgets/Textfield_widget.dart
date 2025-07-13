@@ -28,6 +28,14 @@ class _TextfieldWidgetState extends State<TextfieldWidget> {
       child: TextFormField(
         controller: emailcontroller,
         decoration: InputDecoration(
+          focusedBorder:OutlineInputBorder(
+            borderSide: BorderSide(color: Appcolors.outlinecolor,),
+            borderRadius: BorderRadius.circular(8),
+          ),
+          disabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(8),
+            borderSide: BorderSide(color: Appcolors.entertext)
+          ),
           contentPadding: EdgeInsets.only(left: 10,top: 10),
           border: InputBorder.none,
           prefixIcon: widget.prefixicon,
