@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:management/controller/constant/Appcolors.dart';
+import 'package:management/controller/constant/appcolors/Appcolors.dart';
+// import 'package:management/controller/constant/Appcolors.dart';
 class TextfieldWidget extends StatefulWidget {
   String hinttext;
  Widget prefixicon;
@@ -33,12 +34,8 @@ class _TextfieldWidgetState extends State<TextfieldWidget> {
           hintText: widget.hinttext,
           hintStyle: GoogleFonts.inter(
             color: Appcolors.entertext,
-
-          )
-
-
+          ),
         ),
-
       ),
     );
   }

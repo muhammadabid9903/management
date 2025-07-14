@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:management/controller/Widgets/Passwordtextfield.dart';
-import 'package:management/controller/Widgets/Row_button.dart';
-import 'package:management/controller/Widgets/Textfield_widget.dart';
+import 'package:management/controller/Widgets/row_button.dart';
+import 'package:management/controller/Widgets/textfield_widget.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 class Practice extends StatelessWidget {
   const Practice({super.key});

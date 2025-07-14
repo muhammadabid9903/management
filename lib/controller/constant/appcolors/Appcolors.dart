@@ -12,4 +12,9 @@ class Appcolors{
   static Color entertext=Color(0xff98A2B3);
   static Color profcontainer=Color(0xffF4F6F9);
   static Color signin_color=Color(0xfffefefe);
+  static Color white_color=Color(0xffffffff);
+  static Color cream_color=Color(0xfff9fafb);
+  static Color cream2_color=Color(0xffeaecf0);
+  static Color black_color=Color(0xff000000);
+  static Color red_color=Color(0xfff95555);
 }

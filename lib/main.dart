@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:management/view/signIn_screens/signin_screeen4.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
+import 'package:management/view/signIn_screens/signin_screen2.dart';
+import 'package:management/view/signIn_screens/signin_screen3.dart';
+import 'package:management/view/signIn_screens/signin_screen5.dart';
+import 'package:management/view/signIn_screens/signin_screen6.dart';
+import 'package:management/view/signIn_screens/signinphone_screen1.dart';
+import 'package:management/view/signIn_screens/signinphone_screen2.dart';
+import 'package:management/view/signIn_screens/signinphone_screen3.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
 
@@ -35,11 +43,16 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-<<<<<<< HEAD
-      home: Practice(),
-=======
-      home: SigninScreen1(),
->>>>>>> f0409c7b4e6d67c2e4707f1ed238ee87e4e606cd
+
+       // home: SigninScreen1(),
+      // home: SigninScreen2(),
+      // home: SigninScreen3(),
+      //   home: SigninScreeen4(),
+      // home: SigninScreen5(),
+      // home: SigninScreen6(),
+      // home: SigninphoneScreen1(),
+      // home: SigninphoneScreen2(),
+        home: SigninphoneScreen3(),
     );
   }
 }
