@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:management/controller/Widgets/Textwidget.dart';
 
-
-import 'Textwidget.dart';
-
 class Skipbutton extends StatelessWidget {
   final String text;
   final double fontsize;
@@ -20,7 +17,7 @@ class Skipbutton extends StatelessWidget {
       onTap: (){},
       child:
       Container(
-        width: MediaQuery.of(context).size.width*0.8,
+        width: MediaQuery.of(context).size.width*0.9,
         height: 48,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
