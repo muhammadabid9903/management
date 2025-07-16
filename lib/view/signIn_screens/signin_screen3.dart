@@ -6,6 +6,7 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/signIn_screens/homescreen.dart';
 
 class SigninScreen3 extends StatefulWidget {
   const SigninScreen3({super.key});
@@ -153,7 +154,11 @@ class _SigninScreen3State extends State<SigninScreen3> {
                             ],
                           ),
                           SizedBox(height: 30,),
-                          MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
+                          InkWell(
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+                              },
+                              child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
 
 

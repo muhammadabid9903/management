@@ -6,6 +6,7 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 
 class SigninphoneScreen2 extends StatefulWidget {
   const SigninphoneScreen2({super.key});
@@ -136,9 +137,6 @@ class _SigninphoneScreen2State extends State<SigninphoneScreen2> {
                           SizedBox(height: 30,),
                           MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
                           SizedBox(height: 30,),
-
-
-
                           Row(
                             children: [
                               SizedBox(width: 40,),
@@ -165,7 +163,7 @@ class _SigninphoneScreen2State extends State<SigninphoneScreen2> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [

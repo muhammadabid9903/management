@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:management/view/signIn_screens/signin_screeen4.dart';
+import 'package:management/view/signIn_screens/homescreen.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/signIn_screens/signin_screen2.dart';
 import 'package:management/view/signIn_screens/signin_screen3.dart';
 import 'package:management/view/signIn_screens/signin_screen5.dart';
 import 'package:management/view/signIn_screens/signin_screen6.dart';
+import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 import 'package:management/view/signIn_screens/signinphone_screen1.dart';
 import 'package:management/view/signIn_screens/signinphone_screen2.dart';
 import 'package:management/view/signIn_screens/signinphone_screen3.dart';
@@ -44,15 +45,16 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-       // home: SigninScreen1(),
+        // home: SigninScreen1(),
       // home: SigninScreen2(),
       // home: SigninScreen3(),
-      //   home: SigninScreeen4(),
+      //    home: Homescreen(),
       // home: SigninScreen5(),
       // home: SigninScreen6(),
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
-        home: SigninphoneScreen3(),
+         home: SigninphoneScreen3(),
+      // home: SigninemployeeidScreen(),
     );
   }
 }

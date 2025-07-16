@@ -4,22 +4,22 @@ import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
 
-class SigninScreeen4 extends StatefulWidget {
-  const SigninScreeen4({super.key});
+class Homescreen extends StatefulWidget {
+  const Homescreen({super.key});
 
   @override
-  State<SigninScreeen4> createState() => _SigninScreeen4State();
+  State<Homescreen> createState() => _HomescreenState();
 }
 
-class _SigninScreeen4State extends State<SigninScreeen4> {
+class _HomescreenState extends State<Homescreen> {
 
   int selectedIndex=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
-         backgroundColor: Appcolors.maincolor,
-        unselectedItemColor: Appcolors.black_color,
+         backgroundColor: Appcolors.black_color,
+        unselectedItemColor: Appcolors.white_color,
         selectedItemColor: Colors.black12,
         currentIndex: selectedIndex,
         onTap: (index){
@@ -30,19 +30,24 @@ class _SigninScreeen4State extends State<SigninScreeen4> {
         items: [
           BottomNavigationBarItem(
             icon: Image.asset('lib/assets/botmbarhome_icon.png'),
+            backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(icon: Image.asset('lib/assets/botmbar_icon2.png'),
-          label: '',
+            backgroundColor: Appcolors.black_color,
+            label: '',
           ),
           BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon3.png'),
-          label: '',
+            backgroundColor: Appcolors.black_color,
+            label: '',
           ),
           BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon4.png'),
-          label: '',
+            backgroundColor: Appcolors.black_color,
+            label: '',
           ),
           BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon5.png'),
-          label: '',
+            backgroundColor: Appcolors.black_color,
+            label: '',
           ),
         ],
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 
@@ -68,7 +69,91 @@ class _SigninphoneScreen3State extends State<SigninphoneScreen3> {
                             child: Center(
                               child: Column(
                                 children: [
-                              Text(data)
+                                  SizedBox(height: 60,),
+                              Text('Sign In Phone Number',style: GoogleFonts.inter(
+                                fontSize: 20,
+                                fontWeight: FontWeight.w600,
+                                color:Appcolors.onbmaintext,
+                                ),
+                              ),
+                               SizedBox(height: 10,),
+                               Row(
+                                 children: [
+                                   SizedBox(width: 10,),
+                                   Text('Sign in code has been sent to ',style: GoogleFonts.inter(
+                                     fontWeight: FontWeight.w700,
+                                     fontSize: 12,
+                                     color: Appcolors.onbsubtext,
+                                   ),),
+                                   Text('+6292121002200',style: GoogleFonts.inter(
+                                     fontWeight: FontWeight.w700,
+                                     fontSize: 12,
+                                     color: Appcolors.onbsubtext,
+                                   ),)
+                                 ],
+                               ),
+                                  Row(
+                                    children: [
+                                      SizedBox(width: 10,),
+                                      Text('check your inbox to continue the sign in process',style: GoogleFonts.inter(
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 12,
+                                        color: Appcolors.onbsubtext,
+                                      ),),
+                                    ],
+                                  ),
+                                  SizedBox(height: 20,),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                    children: [
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(color: Colors.grey),
+                                            borderRadius: BorderRadius.circular(10),
+                                          ),
+                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 50,
+                                        width: 50,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(color: Colors.grey),
+                                          borderRadius: BorderRadius.circular(10),
+                                        ),                                      ),
+                                    ],
+                                  )
                                 ],
                               ),
                             ),
