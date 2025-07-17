@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/signIn_screens/Sign_up_screens/Sign_up1.dart';
+import 'package:management/view/signIn_screens/Sign_up_screens/Signup_2.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: SignUp1(),
+      home: Signup2(),
     );
   }
 }
