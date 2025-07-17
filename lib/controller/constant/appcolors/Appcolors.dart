@@ -12,8 +12,16 @@ class Appcolors{
   static Color entertext=Color(0xff98A2B3);
   static Color profcontainer=Color(0xffF4F6F9);
   static Color signin_color=Color(0xfffefefe);
+<<<<<<< HEAD:lib/controller/constant/appcolors/Appcolors.dart
+  static Color white_color=Color(0xffffffff);
+  static Color cream_color=Color(0xfff9fafb);
+  static Color cream2_color=Color(0xffeaecf0);
+  static Color black_color=Color(0xff000000);
+  static Color red_color=Color(0xfff95555);
+=======
   static Color bgcolor=Color(0xffF4F4FA );
   static Color textfieldbg= Color(0xffF7F8FB);
   static Color outlinecolor= Color(0xff7A5AF8);
   static Color botomsheet= Color(0xffF9FAFB);
+>>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643:lib/controller/constant/Appcolors.dart
 }

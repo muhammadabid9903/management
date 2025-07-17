@@ -24,6 +24,10 @@ class _MainButtonState extends State<MainButton> {
 
 
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+
+=======
+>>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
     return Container(
       width: MediaQuery.of(context).size.width*0.9,
       height: 48,
@@ -39,7 +43,11 @@ class _MainButtonState extends State<MainButton> {
       ),
       child: Center(
         child: Mytextwidget(fontcolor: widget.color, fontsize: widget.fontsize, text: widget.text,fontWeight:widget.fontWeight ,),
+<<<<<<< HEAD
+     ),
+=======
       )
+>>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
     );
   }
 }

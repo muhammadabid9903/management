@@ -12,11 +12,20 @@ class Appimages{
   static const String onboarding4_2 ='lib/assets/onboarding4_2.png';
   static const String signin_background ='lib/assets/signin_background.png';
   static const String signin_background_image ='lib/assets/signin_background_image.png';
+<<<<<<< HEAD
+  static const String id_icon ='lib/assets/id_icon.png';
+  static const String call_icon='lib/assets/calls_icon.png';
+  static const String onboardingbackground1='lib/assets/onbardingbackground1.png';
+  static const String onboardingbackground2='lib/assets/onboardingbackground2.png';
+  static const String onboardingbackground3='lib/assets/onboardingbackground3.png';
+  static const String large_call_icon='lib/assets/large_call_icon.png';
+=======
 
 
 
 
 
+>>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
   
   static String onbr1='assets/onb1.png';
   static String onbr2='assets/onb2.png';

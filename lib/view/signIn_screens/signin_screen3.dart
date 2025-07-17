@@ -6,28 +6,29 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
-import 'package:management/view/signIn_screens/signinphone_screen2.dart';
+import 'package:management/view/signIn_screens/homescreen.dart';
 
-class SigninScreen1 extends StatefulWidget {
-  const SigninScreen1({super.key});
+class SigninScreen3 extends StatefulWidget {
+  const SigninScreen3({super.key});
 
   @override
-  State<SigninScreen1> createState() => _SigninScreen1State();
+  State<SigninScreen3> createState() => _SigninScreen3State();
 }
 
-class _SigninScreen1State extends State<SigninScreen1> {
-   bool  ischecked=false;
+class _SigninScreen3State extends State<SigninScreen3> {
+  bool  ischecked=false;
+  bool ispasswordhidden=true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body:
       Stack(
         children: [
-         
+
           Positioned.fill(child: Image.asset(Appimages.signin_background,fit: BoxFit.cover,)),
 
           SingleChildScrollView(
-             child: Column(
+            child: Column(
               children: [
                 SizedBox(height: 200,),
                 Container(
@@ -75,8 +76,8 @@ class _SigninScreen1State extends State<SigninScreen1> {
                               borderRadius: BorderRadius.circular(10),
                             ),
                             child:
-                              TextFormField(
-                                decoration: InputDecoration(
+                            TextFormField(
+                              decoration: InputDecoration(
                                   border: InputBorder.none,
                                   prefixIcon: Image.asset(Appicons.email_icon),
                                   hintText: 'My Email',
@@ -85,8 +86,8 @@ class _SigninScreen1State extends State<SigninScreen1> {
                                     fontWeight: FontWeight.w500,
                                     color: Colors.black54,
                                   )
-                                ),
                               ),
+                            ),
                           ),
                           SizedBox(height: 25,),
                           Row(
@@ -100,42 +101,44 @@ class _SigninScreen1State extends State<SigninScreen1> {
                             ],
                           ),
                           Container(
-                            height: 47,
-                            width: MediaQuery.of(context).size.width*0.85,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                color: Colors.black26,
+                              height: 47,
+                              width: MediaQuery.of(context).size.width*0.85,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Colors.black26,
+                                ),
+                                borderRadius: BorderRadius.circular(10),
                               ),
-                              borderRadius: BorderRadius.circular(10),
-                            ),
                               child:
                               TextFormField(
+                                obscureText: ispasswordhidden,
                                 decoration: InputDecoration(
-                                    border: InputBorder.none,
-                                    prefixIcon: Image.asset(Appicons.password_icon),
-                                    hintText: 'My Password',
-                                    suffixIcon: Image.asset(Appicons.close_eye_icon),
-                                    hintStyle: GoogleFonts.poppins(
-                                      fontSize: 11,
-                                      fontWeight: FontWeight.w500,
-                                      color: Colors.black54,
+                                  border: InputBorder.none,
+                                  prefixIcon: Image.asset(Appicons.password_icon),
+                                  hintText: 'My Password',
+                                  suffixIcon: Image.asset(Appicons.close_eye_icon),
+                                  hintStyle: GoogleFonts.poppins(
+                                    fontSize: 11,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.black54,
 
-                                    ),
+                                  ),
                                 ),
                               )
 
                           ),
                           Row(
                             children: [
-                            SizedBox(width: 20,),
-                      Checkbox(
-                        checkColor: Appcolors.maincolor,
-                        value: ischecked, onChanged: (bool? value){
-                        setState(() {
-                          ischecked=value!;
-                        });
-                      },
-                      ) ,
+                              SizedBox(width: 20,),
+                              Checkbox(
+                                checkColor:Appcolors.white_color,
+                                value: ischecked, onChanged: (bool? value){
+                                setState(() {
+                                  ischecked=value!;
+                                  ispasswordhidden=ischecked;
+                                });
+                              },
+                              ) ,
 
                               Text('Remember me',style: GoogleFonts.poppins(
                                 fontWeight: FontWeight.w400,
@@ -151,7 +154,11 @@ class _SigninScreen1State extends State<SigninScreen1> {
                             ],
                           ),
                           SizedBox(height: 30,),
-                          MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
+                          InkWell(
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+                              },
+                              child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
 
 
@@ -168,7 +175,7 @@ class _SigninScreen1State extends State<SigninScreen1> {
                               Text('OR',style: GoogleFonts.poppins(
                                 fontSize: 10,
                                 fontWeight: FontWeight.w500,
-                                  color: Colors.black54,
+                                color: Colors.black54,
                               ),),
                               SizedBox(width: 10,),
                               Container(
@@ -200,7 +207,7 @@ class _SigninScreen1State extends State<SigninScreen1> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneScreen2()));
+
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -211,10 +218,10 @@ class _SigninScreen1State extends State<SigninScreen1> {
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                   color: Appcolors.maincolor,
-                                 ),
                                 ),
-                               ],
-                             ),
+                                ),
+                              ],
+                            ),
                             ),
                           ),
                           SizedBox(height: 10,),
