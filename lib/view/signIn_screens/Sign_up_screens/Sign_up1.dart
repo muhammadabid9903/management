@@ -227,7 +227,8 @@ class _SignUp1State extends State<SignUp1> {
                                SizedBox(height: 20,),
                                MainButton(color: Colors.white, fontsize:16, text: 'Agree'),
                                SizedBox(height: 20,),
-                               Skipbutton(text: 'Decline', fontsize:16, color:Appcolors.maincolor)
+                               Skipbutton(text: 'Decline', fontsize:16, color:Appcolors.maincolor),
+                               
                              ],
                            ),
                          );
