@@ -6,7 +6,8 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
-import 'package:management/view/signIn_screens/signinphone_screen2.dart';
+import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
+import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 
 class SigninScreen1 extends StatefulWidget {
   const SigninScreen1({super.key});
@@ -154,8 +155,6 @@ class _SigninScreen1State extends State<SigninScreen1> {
                           MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
                           SizedBox(height: 30,),
 
-
-
                           Row(
                             children: [
                               SizedBox(width: 40,),
@@ -182,9 +181,10 @@ class _SigninScreen1State extends State<SigninScreen1> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
                             },
-                            child: RowButton(child: Row(
+                            child: RowButton(child:
+                            Row(
                               children: [
                                 SizedBox(width: 30,),
                                 Image.asset(Appimages.id_icon),
@@ -200,7 +200,7 @@ class _SigninScreen1State extends State<SigninScreen1> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneScreen2()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [

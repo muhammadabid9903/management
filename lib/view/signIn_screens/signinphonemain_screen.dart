@@ -6,16 +6,18 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
+import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
 
-class SigninphoneScreen2 extends StatefulWidget {
-  const SigninphoneScreen2({super.key});
+class SigninphonemainScreen extends StatefulWidget {
+  const SigninphonemainScreen({super.key});
 
   @override
-  State<SigninphoneScreen2> createState() => _SigninphoneScreen2State();
+  State<SigninphonemainScreen> createState() => _SigninphonemainScreenState();
 }
 
-class _SigninphoneScreen2State extends State<SigninphoneScreen2> {
+class _SigninphonemainScreenState extends State<SigninphonemainScreen> {
   bool  ischecked=false;
   bool ishiddenpassword=true;
   @override
@@ -135,7 +137,11 @@ class _SigninphoneScreen2State extends State<SigninphoneScreen2> {
                             ],
                           ),
                           SizedBox(height: 30,),
-                          MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
+                          InkWell(
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneOtpScreen()));
+                              },
+                              child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
                           Row(
                             children: [
@@ -181,14 +187,14 @@ class _SigninphoneScreen2State extends State<SigninphoneScreen2> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
+                               Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
                                 SizedBox(width: 30,),
-                                Image.asset(Appimages.call_icon),
+                                Image.asset(Appimages.email_icon),
                                 SizedBox(width: 20,),
-                                Text('Sign in With Phone',style: GoogleFonts.poppins(
+                                Text('Sign in with email ID',style: GoogleFonts.poppins(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                   color: Appcolors.maincolor,

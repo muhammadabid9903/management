@@ -4,9 +4,10 @@ import 'package:management/controller/Widgets/Passwordtextfield.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/Textfield_widget.dart';
 import 'package:management/controller/Widgets/Textwidget.dart';
-import 'package:management/controller/constant/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
+import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+
 class SignUp1 extends StatefulWidget {
   const SignUp1({super.key});
 
@@ -45,7 +46,8 @@ class _SignUp1State extends State<SignUp1> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Enter Your Emial', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+              child: TextfieldWidget(hinttext: 'Enter Your Emial',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
          SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
@@ -54,8 +56,9 @@ class _SignUp1State extends State<SignUp1> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Enter Your Emial', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
-          //----------
+              child: TextfieldWidget(hinttext: 'Enter Your Emial',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
@@ -64,7 +67,9 @@ class _SignUp1State extends State<SignUp1> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Company ID', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))), SizedBox(height: 20,),
+              child: TextfieldWidget(hinttext: 'Company ID',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+          SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Password',fontWeight: FontWeight.w500,),
@@ -84,7 +89,8 @@ class _SignUp1State extends State<SignUp1> {
 
                     setState(() {
                     });
-                  }, icon: isHide?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
+                  }, icon: isHide?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):
+                  Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
                   , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
           SizedBox(height: 20,),
           Padding(
@@ -109,7 +115,7 @@ class _SignUp1State extends State<SignUp1> {
                   }, icon: isHide2?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
                   , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
           SizedBox(height: 10,),
-          //-------------------------------Terms and Conditions---------------------
+
           Padding(
             padding: const EdgeInsets.only(left: 15),
             child: Row(
@@ -214,8 +220,6 @@ class _SignUp1State extends State<SignUp1> {
                                        ),
                                    
                                    
-                                   
-                                   
                                      ],
                                    ),
                                  ),
@@ -255,22 +259,10 @@ class _SignUp1State extends State<SignUp1> {
                   style: TextButton.styleFrom(
                     padding: EdgeInsets.zero,
                     minimumSize: Size(0,0)
-                  ), child:Mytextwidget(fontcolor: Appcolors.maincolor, fontsize: 12, text: 'Sign in',fontWeight: FontWeight.bold) ),
+                  ),
+                  child:Mytextwidget(fontcolor: Appcolors.maincolor, fontsize: 12, text: 'Sign in',fontWeight: FontWeight.bold) ),
             ],
-          )
-
-
-
-
-
-
-
-
-
-
-
-
-
+          ),
           // Align(
           //     alignment: Alignment.center,
           //     child: MainButton(color: Colors.white, fontsize: 16, text: 'Sign up'))

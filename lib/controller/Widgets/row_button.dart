@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD:lib/controller/Widgets/row_button.dart
 import 'package:management/controller/Widgets/Textwidget.dart';
 // import 'package:management/controller/constant/Appcolors.dart';
-=======
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643:lib/controller/Widgets/Row_button.dart
+
 class RowButton extends StatefulWidget {
 Widget child;
   RowButton({super.key,required this.child});

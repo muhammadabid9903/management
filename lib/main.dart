@@ -1,18 +1,15 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:management/view/signIn_screens/homescreen.dart';
-=======
 import 'package:management/view/signIn_screens/Sign_up_screens/Sign_up1.dart';
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/signIn_screens/signin_screen2.dart';
-import 'package:management/view/signIn_screens/signin_screen3.dart';
+import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signin_screen5.dart';
 import 'package:management/view/signIn_screens/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
-import 'package:management/view/signIn_screens/signinphone_screen1.dart';
-import 'package:management/view/signIn_screens/signinphone_screen2.dart';
-import 'package:management/view/signIn_screens/signinphone_screen3.dart';
+import 'package:management/view/test_screen/signinphone_screen1.dart';
+import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
+import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
 import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
 
@@ -49,7 +46,6 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-<<<<<<< HEAD
         // home: SigninScreen1(),
       // home: SigninScreen2(),
       // home: SigninScreen3(),
@@ -58,11 +54,12 @@ class MyApp extends StatelessWidget {
       // home: SigninScreen6(),
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
-         home: SigninphoneScreen3(),
+          home: SinginStartScreen(),
+      // SigninemailScreen(),
       // home: SigninemployeeidScreen(),
-=======
-      home: SignUp1(),
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
+
+      // home: SignUp1(),
+
     );
   }
 }

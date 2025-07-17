@@ -7,15 +7,17 @@ import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
+import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 
-class SigninScreen3 extends StatefulWidget {
-  const SigninScreen3({super.key});
+class SigninemailScreen extends StatefulWidget {
+  const SigninemailScreen({super.key});
 
   @override
-  State<SigninScreen3> createState() => _SigninScreen3State();
+  State<SigninemailScreen> createState() => _SigninemailScreenState();
 }
 
-class _SigninScreen3State extends State<SigninScreen3> {
+class _SigninemailScreenState extends State<SigninemailScreen> {
   bool  ischecked=false;
   bool ispasswordhidden=true;
   @override
@@ -189,7 +191,7 @@ class _SigninScreen3State extends State<SigninScreen3> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
+                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -209,19 +211,24 @@ class _SigninScreen3State extends State<SigninScreen3> {
                             onTap: (){
 
                             },
-                            child: RowButton(child: Row(
-                              children: [
-                                SizedBox(width: 30,),
-                                Image.asset(Appimages.call_icon),
-                                SizedBox(width: 20,),
-                                Text('Sign in With Phone',style: GoogleFonts.poppins(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w500,
-                                  color: Appcolors.maincolor,
-                                ),
-                                ),
-                              ],
-                            ),
+                            child: InkWell(
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
+                              },
+                              child: RowButton(child: Row(
+                                children: [
+                                  SizedBox(width: 30,),
+                                  Image.asset(Appimages.call_icon),
+                                  SizedBox(width: 20,),
+                                  Text('Sign in With Phone',style: GoogleFonts.poppins(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w500,
+                                    color: Appcolors.maincolor,
+                                  ),
+                                  ),
+                                ],
+                              ),
+                              ),
                             ),
                           ),
                           SizedBox(height: 10,),

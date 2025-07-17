@@ -43,15 +43,8 @@ class _TextfieldWidgetState extends State<TextfieldWidget> {
           hintText: widget.hinttext,
           hintStyle: GoogleFonts.inter(
             color: Appcolors.entertext,
-<<<<<<< HEAD:lib/controller/Widgets/textfield_widget.dart
-          ),
-=======
             fontSize: 14,
-
-          )
-
-
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643:lib/controller/Widgets/Textfield_widget.dart
+          ),
         ),
       ),
     );

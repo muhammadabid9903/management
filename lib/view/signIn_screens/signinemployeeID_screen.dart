@@ -6,7 +6,9 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
-import 'package:management/view/signIn_screens/signinphone_screen2.dart';
+import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/signIn_screens/signinemail_screen.dart';
+import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 
 class SigninemployeeidScreen extends StatefulWidget {
   const SigninemployeeidScreen({super.key});
@@ -154,11 +156,12 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                             ],
                           ),
                           SizedBox(height: 30,),
-                          MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', ),
+                          InkWell(
+                              onTap: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+                              },
+                              child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
-
-
-
                           Row(
                             children: [
                               SizedBox(width: 40,),
@@ -185,14 +188,14 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
                                 SizedBox(width: 30,),
-                                Image.asset(Appimages.id_icon),
+                                Image.asset(Appimages.email_icon),
                                 SizedBox(width: 20,),
-                                Text('Sign in With Employee ID',style: GoogleFonts.poppins(
+                                Text('Sign in with email',style: GoogleFonts.poppins(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                   color: Appcolors.maincolor,
@@ -203,7 +206,7 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneScreen2()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
 
                             },
                             child: RowButton(child: Row(
