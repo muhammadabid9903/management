@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/Textwidget.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
@@ -31,7 +32,8 @@ class _SinginStartScreenState extends State<SinginStartScreen> {
                  onTap: (){
                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
                  },
-                 child: MainButton(color: Colors.white, fontsize: 14, text: 'Sign in',fontWeight:FontWeight.bold)),
+                 child:
+                 MainButton(color: Colors.white, fontsize: 14, text: 'Sign in ',fontWeight: FontWeight.bold,)),
               SizedBox(height: 15,),
               Skipbutton(text: 'Sign up', fontsize: 14, color:Color(0xff5B2ED4), )
             ],
