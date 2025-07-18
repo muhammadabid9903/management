@@ -4,8 +4,9 @@ import 'package:management/controller/Widgets/Passwordtextfield.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/Textfield_widget.dart';
 import 'package:management/controller/Widgets/Textwidget.dart';
-import 'package:management/controller/constant/Appcolors.dart';
+// import 'package:management/controller/constant/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
+import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
 class Signup2 extends StatefulWidget {
   const Signup2({super.key});
@@ -45,26 +46,32 @@ class _Signup2State extends State<Signup2> {
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Enter Your Emial', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+              child: TextfieldWidget(hinttext: 'Enter Your Emial',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Phone Number',fontWeight: FontWeight.w500,),
+            child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Phone Number',
+              fontWeight: FontWeight.w500,),
           ),
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Enter Your Emial', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+              child: TextfieldWidget(hinttext: 'Enter Your Emial',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
           //----------
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Company ID',fontWeight: FontWeight.w500,),
+            child: Mytextwidget(fontcolor: Colors.black, fontsize:12,
+              text: 'Company ID',fontWeight: FontWeight.w500,),
           ),
           SizedBox(height: 5,),
           Align(
               alignment: Alignment.center,
-              child: TextfieldWidget(hinttext: 'Company ID', prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))), SizedBox(height: 20,),
+              child: TextfieldWidget(hinttext: 'Company ID',
+                  prefixicon: ImageIcon(AssetImage(Appicons.email_icon),color: Appcolors.maincolor,))),
+          SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Password',fontWeight: FontWeight.w500,),
@@ -84,12 +91,14 @@ class _Signup2State extends State<Signup2> {
 
                     setState(() {
                     });
-                  }, icon: isHide?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
+                  }, icon: isHide?ImageIcon(AssetImage(Appicons.close_eye_icon),
+                    color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
                   , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
           SizedBox(height: 20,),
           Padding(
             padding: const EdgeInsets.only(left: 20),
-            child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Confirm Password',fontWeight: FontWeight.w500,),
+            child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Confirm Password',
+              fontWeight: FontWeight.w500,),
           ),
           SizedBox(height: 5,),
           Align(
@@ -106,8 +115,11 @@ class _Signup2State extends State<Signup2> {
 
                     setState(() {
                     });
-                  }, icon: isHide2?ImageIcon(AssetImage(Appicons.close_eye_icon),color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,color: Appcolors.maincolor,))
-                  , prefixicon:ImageIcon(AssetImage(Appicons.password_icon),color: Appcolors.maincolor,))),
+                  }, icon: isHide2?ImageIcon(AssetImage(Appicons.close_eye_icon),
+                    color: Appcolors.maincolor,):Icon(Icons.remove_red_eye,
+                    color: Appcolors.maincolor,)),
+                  prefixicon:ImageIcon(AssetImage(Appicons.password_icon),
+                    color: Appcolors.maincolor,))),
           SizedBox(height: 10,),
           //-------------------------------Terms and Conditions---------------------
           Padding(
@@ -156,8 +168,7 @@ class _Signup2State extends State<Signup2> {
                                 Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Termn & Conditions and \n'
                                     '          Privacy Policy',fontWeight: FontWeight.w600,),
                                 SizedBox(height: 20,),
-                                
-                          
+
                               ],
                             ),
                           ),
@@ -171,7 +182,8 @@ class _Signup2State extends State<Signup2> {
                     padding: EdgeInsets.zero,
                     minimumSize: Size(0, 0),
                   )
-                  ,child:  Mytextwidget(fontcolor:Appcolors.maincolor, fontsize: 12, text: 'privacy policy',fontWeight:FontWeight.w600,),)
+                  ,child:  Mytextwidget(fontcolor: Appcolors.maincolor,
+                    fontsize: 12, text: 'privacy policy',fontWeight:FontWeight.w600,),)
 
               ],
             ),
@@ -179,32 +191,23 @@ class _Signup2State extends State<Signup2> {
           SizedBox(height: 20,),
           Align(
             alignment: Alignment.center,
-            child: MainButton(color: Colors.white, fontsize: 16, text: 'Sign up',fontWeight: FontWeight.bold,),
+            child: MainButton(color: Colors.white, fontsize: 16,
+              text: 'Sign up',fontWeight: FontWeight.bold,),
           ),
           SizedBox(height: 20,),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Already have an account? ',fontWeight: FontWeight.bold,),
+              Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Already have an account? '
+                ,fontWeight: FontWeight.bold,),
               TextButton(onPressed: (){},
                   style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: Size(0,0)
                   ), child:Mytextwidget(fontcolor: Appcolors.maincolor, fontsize: 12, text: 'Sign in',fontWeight: FontWeight.bold) ),
             ],
-          )
-
-
-
-
-
-
-
-
-
-
-
+          ),
 
 
           // Align(

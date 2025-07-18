@@ -2,6 +2,7 @@ import 'package:flutter/animation.dart';
 
 class Appcolors{
   static Color maincolor=Color(0xff5B2ED4);
+  static Color black2=Color(0xff344054);
   static Color onbmaintext=Color(0xff101828);
   static Color onbsubtext=Color(0xff475467);
   static Color signinicon=Color(0xff7A5AF8);
@@ -20,4 +21,5 @@ class Appcolors{
   static Color textfieldbg= Color(0xffF7F8FB);
   static Color outlinecolor= Color(0xff7A5AF8);
   static Color botomsheet= Color(0xffF9FAFB);
+  static Color low_cream= Color(0xffe7e7e7);
 }

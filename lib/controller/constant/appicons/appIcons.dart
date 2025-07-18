@@ -15,4 +15,13 @@ class Appicons{
   static const String textbutton1='lib/assets/textbutton1.png';
   static const String textbutton='lib/assets/textbutton.png';
   static const String warning_icon='lib/assets/warning_icon.png';
+  static const String profile_completion_icon='lib/assets/profile_completion_icon.png';
+  static const String user_icon = 'lib/assets/user_icon.png';
+  static const String assets_icon ='lib/assets/assets_icon.png';
+  static const String tex_icon = 'lib/assets/tex_icon.png';
+  static const String roles_icon = 'lib/assets/roles_icon.png';
+  static const String settings_icon = 'lib/assets/setting_icon.png';
+  static const String help_detail_icon = 'lib/assets/help_detail_icon.png';
+  static const String vesion_icon = 'lib/assets/version_icon.png';
+  static const String logout_icon = 'lib/assets/logout_icon.png';
 }

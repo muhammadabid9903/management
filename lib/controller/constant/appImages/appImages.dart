@@ -19,8 +19,15 @@ class Appimages{
   static const String onboardingbackground3='lib/assets/onboardingbackground3.png';
   static const String large_call_icon='lib/assets/large_call_icon.png';
   static const String email_icon='lib/assets/email_icon.png';
+  static const String backarrow='lib/assets/back_arrow.png';
+  static const String profile_icon1='lib/assets/profile_icon1.png';
+  static const String profile_icon2='lib/assets/profile_icon2.png';
+  static const String teammember_pi1='lib/assets/teammemeber_pic.png';
+  static const String teammember_pi2='lib/assets/teammember2_pic.png';
+  static const String teammember_pi3='lib/assets/teammember3_pic.png';
 
-  
+
+
   static String onbr1='assets/onb1.png';
   static String onbr2='assets/onb2.png';
   static String onbr3='assets/onb3.png';

@@ -1,20 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/signIn_screens/homescreen.dart';
-import 'package:management/view/signIn_screens/Sign_up_screens/Sign_up1.dart';
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-import 'package:management/view/signIn_screens/Sign_up_screens/Signup_2.dart';
-=======
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
->>>>>>> e6966efacb705227ab42fb0b2c65e0cf2c12f3e8
->>>>>>> b38cc4718b724cd9c2dae46a927741a35ce100c6
+import 'package:management/view/signup_screens/Sign_up1.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/signIn_screens/signin_screen2.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signin_screen5.dart';
 import 'package:management/view/signIn_screens/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
+import 'package:management/view/signup_screens/profile_screen.dart';
 import 'package:management/view/test_screen/signinphone_screen1.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
@@ -54,35 +47,21 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      home: Signup2(),
-=======
-<<<<<<< HEAD
->>>>>>> b38cc4718b724cd9c2dae46a927741a35ce100c6
         // home: SigninScreen1(),
       // home: SigninScreen2(),
       // home: SigninScreen3(),
-      //    home: Homescreen(),
+          home: Homescreen(),
       // home: SigninScreen5(),
       // home: SigninScreen6(),
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
-          home: SinginStartScreen(),
+      // home: SinginStartScreen(),
+      //    home: ProfileScreen(),
       // SigninemailScreen(),
       // home: SigninemployeeidScreen(),
-<<<<<<< HEAD
-
       // home: SignUp1(),
-
-=======
-=======
-      home: SignUp1(),
->>>>>>> 3fa06f3da44e4a0ad519a5643bb4ba9d58f60643
->>>>>>> e6966efacb705227ab42fb0b2c65e0cf2c12f3e8
->>>>>>> b38cc4718b724cd9c2dae46a927741a35ce100c6
-    );
+      // home: SignUp1(),
+);
   }
 }
 

@@ -55,6 +55,13 @@ class _HomescreenState extends State<Homescreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
+          Container(
+            height: 124,
+            width: MediaQuery.of(context).size.width*1,
+          color: Appcolors.white_color,
+          child:
+            Column(
+                    children: [
             SizedBox(height: 50,),
             Row(
               children: [
@@ -96,52 +103,55 @@ class _HomescreenState extends State<Homescreen> {
                 ),
               ],
             ),
-            Container(
-              padding: EdgeInsets.symmetric(),
-              margin: EdgeInsets.symmetric(vertical: 20),
-              height: 96,
-              width: MediaQuery.of(context).size.width*0.92,
-              decoration: BoxDecoration(
-                border: Border.all(),
-                borderRadius: BorderRadius.circular(20),
-                color: Appcolors.signinsuccesscontainer,
-              ),
-              child:
-              Column(
-                children: [
-                  // SizedBox(height: 20,),
-                  Row(
-                    // mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Column(
-                        children: [
-
-                          Text('My Work Summery',style: GoogleFonts.poppins(
-                            fontSize: 15,
-                            fontWeight: FontWeight.w600,
-                            color: Appcolors.white_color,
-                          ),),
-                          Row(
-                            children: [
-                             SizedBox(width: 10,),
-                              Text('Today task & presence activity',style: GoogleFonts.urbanist(
-                                fontSize: 11   ,
-                                fontWeight: FontWeight.w500,
-                                color: Appcolors.white_color,
-                              ),),
-                            ],
-                          ),
-                        ],
-                      ),
-                      SizedBox(width: 20,),
-                      Image.asset('lib/assets/cctv_camera_pic.png'),
-                      // SizedBox(width: 10,),
                     ],
-                  )
-                ],
-              ),
             ),
-            SizedBox(height: 10,),
+          ),
+            Container(
+                padding: EdgeInsets.symmetric(),
+                margin: EdgeInsets.symmetric(vertical: 15),
+                height: 96,
+                width: MediaQuery.of(context).size.width*0.92,
+                decoration: BoxDecoration(
+                  border: Border.all(),
+                  borderRadius: BorderRadius.circular(20),
+                  color: Appcolors.signinsuccesscontainer,
+                ),
+                child:
+                Column(
+                  children: [
+                    // SizedBox(height: 20,),
+                    Row(
+                      // mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Column(
+                          children: [
+
+                            Text('My Work Summery',style: GoogleFonts.poppins(
+                              fontSize: 15,
+                              fontWeight: FontWeight.w600,
+                              color: Appcolors.white_color,
+                            ),),
+                            Row(
+                              children: [
+                               SizedBox(width: 10,),
+                                Text('Today task & presence activity',style: GoogleFonts.urbanist(
+                                  fontSize: 11   ,
+                                  fontWeight: FontWeight.w500,
+                                  color: Appcolors.white_color,
+                                ),),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(width: 20,),
+                        Image.asset('lib/assets/cctv_camera_pic.png'),
+                        // SizedBox(width: 10,),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            // SizedBox(height: 10,),
             Container(
               height: 259,
               width: MediaQuery.of(context).size.width*0.92,
@@ -213,14 +223,31 @@ class _HomescreenState extends State<Homescreen> {
                             // SizedBox(width: 10,),
                             Stack(
                               children: [
-                                Image.asset('lib/assets/teammemeber_pic.png'),
-                                 // Row(
-                                 //   children: [
-                                 //     SizedBox(width: 10,)
-                                 //     Image.asset('lib/assets/teammemeber2_pic.png'),
-                                 //   ],
-                                 // ),
-                                // Image.asset('lib/assets/teammemeber3_pic.png'),
+                                Image.asset(Appimages.teammember_pi1),
+                              Column(
+                                children: [
+                                  Center(
+                                    child: Row(
+                                      children: [
+                                        SizedBox(width: 20,),
+                                        Image.asset(Appimages.teammember_pi2),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                                Column(
+                                  children: [
+                                    Center(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 40,),
+                                          Image.asset(Appimages.teammember_pi3),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                )
                               ],
                             ),
                             SizedBox(width: 140,),
@@ -274,6 +301,8 @@ class _HomescreenState extends State<Homescreen> {
                             ),)
                           ],
                         ),
+
+
                         SizedBox(height: 10,),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -281,14 +310,32 @@ class _HomescreenState extends State<Homescreen> {
                             // SizedBox(width: 10,),
                             Stack(
                               children: [
-                                Image.asset('lib/assets/teammemeber_pic.png'),
-                                // Row(
-                                //   children: [
-                                //     SizedBox(width: 10,)
-                                //     Image.asset('lib/assets/teammemeber2_pic.png'),
-                                //   ],
-                                // ),
-                                // Image.asset('lib/assets/teammemeber3_pic.png'),
+                                Image.asset(Appimages.teammember_pi3),
+                                Column(
+                                  children: [
+                                    Center(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 20,),
+                                          Image.asset(Appimages.teammember_pi2),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    Center(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 40,),
+                                          Image.asset(Appimages.teammember_pi1),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                )
+
                               ],
                             ),
                             SizedBox(width: 140,),
@@ -306,9 +353,10 @@ class _HomescreenState extends State<Homescreen> {
                                   color: Appcolors.white_color,
                                 ),),
                               ),
-                            )
+                            ),
                           ],
                         ),
+
                       ],
                     ),
                   ),
@@ -387,14 +435,80 @@ class _HomescreenState extends State<Homescreen> {
                           ],
                         ),
                         SizedBox(height: 15,),
-                        Container(
-                          height: 4,
-                          width: MediaQuery.of(context).size.width*0.76,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
-                            color: Appcolors.maincolor,
-                          ),
-                        )
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 3,
+                              width: MediaQuery.of(context).size.width*0.66,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Appcolors.maincolor,
+                              ),
+                            ),
+                            Container(
+                              height: 3,
+                              width: 40,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Appcolors.low_cream,
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(height: 10,),
+                        Row(
+                          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            // SizedBox(width: 10,),
+                            Stack(
+                              children: [
+                                Image.asset(Appimages.teammember_pi3),
+                                Column(
+                                  children: [
+                                    Center(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 20,),
+                                          Image.asset(Appimages.teammember_pi2),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Column(
+                                  children: [
+                                    Center(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 40,),
+                                          Image.asset(Appimages.teammember_pi1),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ),
+                            SizedBox(width: 90,),
+                            Image.asset('lib/assets/date_box.png'),
+                            Text('27 April',style: GoogleFonts.inter(
+                              color: Appcolors.entertext,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                             ),
+                            ),
+                            SizedBox(width: 30,),
+                            Image.asset('lib/assets/message_box.png'),
+                            Text(' 2',style: GoogleFonts.inter(
+                              color: Appcolors.entertext,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   ),
