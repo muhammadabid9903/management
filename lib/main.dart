@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
         // home: SigninScreen1(),
       // home: SigninScreen2(),
       // home: SigninScreen3(),
-          home: Signup2(),
+          home: ProfileScreen(),
       // home: SigninScreen5(),
       // home: SigninScreen6(),
       // home: SigninphoneScreen1(),

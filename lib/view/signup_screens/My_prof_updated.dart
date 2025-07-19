@@ -1,21 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:management/controller/constant/appImages/appImages.dart';
-import 'package:management/controller/constant/appcolors/Appcolors.dart';
-import 'package:management/controller/constant/appicons/appIcons.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+import '../../controller/constant/appImages/appImages.dart';
+import '../../controller/constant/appcolors/Appcolors.dart';
+import '../../controller/constant/appicons/appIcons.dart';
+class MyProfUpdated extends StatefulWidget {
+  const MyProfUpdated({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<MyProfUpdated> createState() => _MyProfUpdatedState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _MyProfUpdatedState extends State<MyProfUpdated> {
   @override
   Widget build(BuildContext context) {
-    return
-      Scaffold(
+    return Scaffold(
       body: Stack(
         children: [
           Positioned.fill(child: Image.asset(Appimages.onboarding_background,fit: BoxFit.cover,)),
@@ -73,112 +72,112 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     Image.asset(Appicons.profile_completion_icon),
                   ],
                 ),
-               Text('Tonald@work.com',style: GoogleFonts.inter(
-                 fontWeight: FontWeight.w500,
-                 fontSize: 13,
-                 color: Appcolors.maincolor,
-               ),),
+                Text('Tonald@work.com',style: GoogleFonts.inter(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 13,
+                  color: Appcolors.maincolor,
+                ),),
                 SizedBox(height: 40,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                  SizedBox(width: 20,),
-                  Text('Account',style: GoogleFonts.inter(
-                    fontSize: 12,
-                    fontWeight: FontWeight.w600,
-                    color: Appcolors.black2,
-                  ),)
+                    SizedBox(width: 20,),
+                    Text('Account',style: GoogleFonts.inter(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w600,
+                      color: Appcolors.black2,
+                    ),)
                   ],
                 ),
                 SizedBox(height: 10,),
-               Container(
-                 height: 156,
-                 width: MediaQuery.of(context).size.width*0.93,
-                 decoration: BoxDecoration(
-                   color: Appcolors.profcontainer,
-                   borderRadius: BorderRadius.circular(15),
-                 ),
-                 child: Column(
-                   children: [
-                     SizedBox(height: 20,),
-                     Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: [
-                         Row(
-                           children: [
-                             SizedBox(width: 10,),
-                             Image.asset(Appicons.user_icon),
-                             SizedBox(width: 10,),
-                             Text('My work profile',style: GoogleFonts.inter(
-                               fontSize: 11,
-                               fontWeight: FontWeight.w500,
-                               color: Appcolors.onbsubtext,
-                             ),)
-                           ],
-                         ),
-                         Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
-                       ],
-                     ),
-                     SizedBox(height: 10,),
-                     Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: [
-                         Row(
-                           children: [
-                             SizedBox(width: 10,),
-                             Image.asset(Appicons.assets_icon),
-                             SizedBox(width: 10,),
-                             Text('Office Assets',style: GoogleFonts.inter(
-                               fontSize: 11,
-                               fontWeight: FontWeight.w500,
-                               color: Appcolors.onbsubtext,
-                             ),)
-                           ],
-                         ),
-                         Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
-                       ],
-                     ),
-                     SizedBox(height: 10,),
-                     Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: [
-                         Row(
-                           children: [
-                             SizedBox(width: 10,),
-                             Image.asset(Appicons.tex_icon),
-                             SizedBox(width: 10,),
-                             Text('Payroll & Tax',style: GoogleFonts.inter(
-                               fontSize: 11,
-                               fontWeight: FontWeight.w500,
-                               color: Appcolors.onbsubtext,
-                             ),)
-                           ],
-                         ),
-                         Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
-                       ],
-                     ),
-                     SizedBox(height: 10,),
-                     Row(
-                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                       children: [
-                         Row(
-                           children: [
-                             SizedBox(width: 10,),
-                             Image.asset(Appicons.roles_icon),
-                             SizedBox(width: 10,),
-                             Text('Roles',style: GoogleFonts.inter(
-                               fontSize: 11,
-                               fontWeight: FontWeight.w500,
-                               color: Appcolors.onbsubtext,
-                             ),)
-                           ],
-                         ),
-                         Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
-                       ],
-                     ),
-                   ],
-                 ),
-               ),
+                Container(
+                  height: 156,
+                  width: MediaQuery.of(context).size.width*0.93,
+                  decoration: BoxDecoration(
+                    color: Appcolors.profcontainer,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: Column(
+                    children: [
+                      SizedBox(height: 20,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: 10,),
+                              Image.asset(Appicons.user_icon),
+                              SizedBox(width: 10,),
+                              Text('My work profile',style: GoogleFonts.inter(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                                color: Appcolors.onbsubtext,
+                              ),)
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: 10,),
+                              Image.asset(Appicons.assets_icon),
+                              SizedBox(width: 10,),
+                              Text('Office Assets',style: GoogleFonts.inter(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                                color: Appcolors.onbsubtext,
+                              ),)
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: 10,),
+                              Image.asset(Appicons.tex_icon),
+                              SizedBox(width: 10,),
+                              Text('Payroll & Tax',style: GoogleFonts.inter(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                                color: Appcolors.onbsubtext,
+                              ),)
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
+                        ],
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(width: 10,),
+                              Image.asset(Appicons.roles_icon),
+                              SizedBox(width: 10,),
+                              Text('Roles',style: GoogleFonts.inter(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w500,
+                                color: Appcolors.onbsubtext,
+                              ),)
+                            ],
+                          ),
+                          Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
 
                 SizedBox(height: 20,),
                 Row(
@@ -285,6 +284,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ),
         ],
       ),
-    );
+    );;
   }
 }
