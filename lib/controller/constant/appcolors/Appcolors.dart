@@ -23,4 +23,5 @@ class Appcolors{
   static Color botomsheet= Color(0xffF9FAFB);
   static Color low_cream= Color(0xffe7e7e7);
   static Color smaallcont= Color(0xffD0D5DD);
+  static Color proficoncolor= Color(0xff9B8AFB);
 }
