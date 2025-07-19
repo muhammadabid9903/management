@@ -22,4 +22,7 @@ class Appcolors{
   static Color outlinecolor= Color(0xff7A5AF8);
   static Color botomsheet= Color(0xffF9FAFB);
   static Color low_cream= Color(0xffe7e7e7);
+  static Color gray = Color(0xff667085);
+  static Color gray_light = Color(0xff475467);
+  static Color low_white = Color(0xfffefefe);
 }

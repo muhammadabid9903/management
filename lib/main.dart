@@ -8,6 +8,7 @@ import 'package:management/view/signIn_screens/signin_screen5.dart';
 import 'package:management/view/signIn_screens/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 import 'package:management/view/signup_screens/profile_screen.dart';
+import 'package:management/view/signup_screens/work_profile_screen.dart';
 import 'package:management/view/test_screen/signinphone_screen1.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
@@ -47,20 +48,22 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-        // home: SigninScreen1(),
-      // home: SigninScreen2(),
-      // home: SigninScreen3(),
-          home: Homescreen(),
-      // home: SigninScreen5(),
-      // home: SigninScreen6(),
+            home: SigninScreen1(),
+        //   home: SigninScreen2(),
+      //  home: SigninScreen3(),
+      //     home: Homescreen(),
+      //  home: SigninScreen5(),
+      //  home: SigninScreen6(),
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
       // home: SinginStartScreen(),
-      //    home: ProfileScreen(),
+      // home: ProfileScreen(),
       // SigninemailScreen(),
       // home: SigninemployeeidScreen(),
       // home: SignUp1(),
       // home: SignUp1(),
+      //    home: WorkProfileScreen(),
+      // home: SigninphoneOtpScreen(),
 );
   }
 }

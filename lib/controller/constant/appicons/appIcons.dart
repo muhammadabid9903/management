@@ -24,4 +24,7 @@ class Appicons{
   static const String help_detail_icon = 'lib/assets/help_detail_icon.png';
   static const String vesion_icon = 'lib/assets/version_icon.png';
   static const String logout_icon = 'lib/assets/logout_icon.png';
+   static const String user_icon2 ='lib/assets/user_icon.png';
+   static const String date_of_birth_icon='lib/assets/date_of_birth_icon.png';
+   static const String gender_selection_icon = 'lib/assets/gender_selection_icon.png';
 }

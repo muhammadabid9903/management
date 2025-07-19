@@ -25,6 +25,7 @@ class Appimages{
   static const String teammember_pi1='lib/assets/teammemeber_pic.png';
   static const String teammember_pi2='lib/assets/teammember2_pic.png';
   static const String teammember_pi3='lib/assets/teammember3_pic.png';
+  static const String profile_image_frame = 'lib/assets/profile_image_frame .png';
 
 
 

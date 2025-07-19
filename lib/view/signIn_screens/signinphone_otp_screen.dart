@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
@@ -56,6 +58,13 @@ class _SigninphoneOtpScreenState extends State<SigninphoneOtpScreen> {
                           ),
                         ],
                       ),
+                      BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 5.0,sigmaY: 5.0),
+                        child: Container(
+                          color: Colors.transparent,
+                        ),
+                      ),
+
                       Column(
                        children: [
                          SizedBox(height: 300,),

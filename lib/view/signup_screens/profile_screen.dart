@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/signup_screens/work_profile_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -103,17 +104,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                      Row(
                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                        children: [
-                         Row(
-                           children: [
-                             SizedBox(width: 10,),
-                             Image.asset(Appicons.user_icon),
-                             SizedBox(width: 10,),
-                             Text('My work profile',style: GoogleFonts.inter(
-                               fontSize: 11,
-                               fontWeight: FontWeight.w500,
-                               color: Appcolors.onbsubtext,
-                             ),)
-                           ],
+                         InkWell(
+                           onTap: (){
+                             Navigator.push(context, MaterialPageRoute(builder: (context)=>WorkProfileScreen()));
+                           },
+                           child: Row(
+                             children: [
+                               SizedBox(width: 10,),
+                               Image.asset(Appicons.user_icon),
+                               SizedBox(width: 10,),
+                               Text('My work profile',style: GoogleFonts.inter(
+                                 fontSize: 11,
+                                 fontWeight: FontWeight.w500,
+                                 color: Appcolors.onbsubtext,
+                               ),)
+                             ],
+                           ),
                          ),
                          Icon(Icons.arrow_forward_ios,color: Appcolors.onbsubtext,),
                        ],
