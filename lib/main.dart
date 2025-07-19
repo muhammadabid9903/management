@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/signup_screens/My_prof1.dart';
+import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
 import 'package:management/view/signIn_screens/signin_screen1.dart';
 import 'package:management/view/signIn_screens/signin_screen2.dart';
@@ -7,6 +9,7 @@ import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signin_screen5.dart';
 import 'package:management/view/signIn_screens/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
+import 'package:management/view/signup_screens/Signup_2.dart';
 import 'package:management/view/signup_screens/profile_screen.dart';
 import 'package:management/view/signup_screens/work_profile_screen.dart';
 import 'package:management/view/test_screen/signinphone_screen1.dart';
@@ -29,31 +32,25 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
-        //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
-        //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
 
+<<<<<<< HEAD
             home: SigninScreen1(),
         //   home: SigninScreen2(),
       //  home: SigninScreen3(),
       //     home: Homescreen(),
       //  home: SigninScreen5(),
       //  home: SigninScreen6(),
+=======
+        // home: SigninScreen1(),
+      // home: SigninScreen2(),
+      // home: SigninScreen3(),
+          home: WorkProfileScreen(),
+      // home: SigninScreen5(),
+      // home: SigninScreen6(),
+>>>>>>> b6b8adffb817b098e88705ee073f91588633e08b
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
       // home: SinginStartScreen(),

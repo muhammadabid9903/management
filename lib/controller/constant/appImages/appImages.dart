@@ -40,5 +40,12 @@ class Appimages{
   static String topimg='assets/topimg.png';
   static String signup1='assets/signup1.png';
   static String signup2='assets/signup2.png';
+  static String ach1='assets/ach1.png';
+  static String ach2='assets/ach2.png';
+  static String ach3='assets/ach3.png';
+  static String ach4='assets/ach4.png';
+  static String profman='assets/profimg.png';
+  static String frame='assets/frame.png';
+  static String account='assets/account.png';
 
 }

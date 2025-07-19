@@ -519,5 +519,31 @@ class _HomescreenState extends State<Homescreen> {
         ),
       ),
     );
+    // Column(
+    //   children: [
+    //     SizedBox(height:70,),
+    //     Align(
+    //         alignment: Alignment.center,
+    //         child: Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Welcome To Workmate',fontWeight: FontWeight.bold,)),
+    //     SizedBox(height: 20,),
+    //     Padding(
+    //       padding: const EdgeInsets.only(left: 30),
+    //       child: Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'To enhance your user experience,please set up your\n'
+    //           'profile first. This will help us tailer the app to your needs \n'
+    //           'and ensure you get the most out of our features! ',fontWeight: FontWeight.w600,),
+    //     ),
+    //     SizedBox(height: 20,),
+    //     Align(
+    //       alignment: Alignment.center,
+    //       child: MainButton(color: Colors.white, fontsize: 14, text: 'Set up my Profile'),
+    //     ),
+    //     SizedBox(height: 20,),
+    //     Align(
+    //       alignment: Alignment.center,
+    //       child: Skipbutton(text: 'Explore the App first', fontsize: 14, color: Appcolors.maincolor),
+    //     ),
+    //
+    //   ],
+    // )
   }
 }

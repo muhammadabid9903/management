@@ -15,7 +15,8 @@ class ProfileScreen extends StatefulWidget {
 class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return
+      Scaffold(
       body: Stack(
         children: [
           Positioned.fill(child: Image.asset(Appimages.onboarding_background,fit: BoxFit.cover,)),
@@ -26,7 +27,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 children: [
                   SizedBox(width: 10,),
                   Image.asset(Appimages.backarrow),
-                  SizedBox(width: 70,),
+                  SizedBox(width: 110,),
                   Text('My Profile',style: GoogleFonts.inter(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
@@ -36,7 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
               SizedBox(height: 140,),
               Container(
-                height: 565,
+                height: 500,
                 width: MediaQuery.of(context).size.width*1,
                 decoration: BoxDecoration(
                   color: Appcolors.white_color,
