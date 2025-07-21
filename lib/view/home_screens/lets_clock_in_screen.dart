@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
+import 'package:management/controller/constant/appicons/appIcons.dart';
 
 class LetsClockInScreen extends StatefulWidget {
   const LetsClockInScreen({super.key});
@@ -41,7 +43,7 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
                          children: [
                            // SizedBox(width: 30,),
                            Text('Let,s Clock-In!',style: GoogleFonts.inter(
-                             fontSize: 18,
+                             fontSize: 20,
                              fontWeight: FontWeight.w600,
                              color: Appcolors.white_color,
                            ),),
@@ -70,7 +72,7 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
                     SizedBox(height: 150,),
                     Container(
                       height: 210,
-                      width: MediaQuery.of(context).size.width*0.88,
+                      width: MediaQuery.of(context).size.width*0.92,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(10),
@@ -88,10 +90,99 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
                                 fontSize: 14,
                                 fontWeight: FontWeight.w500,
                                 color: Appcolors.onbmaintext,
-                                
                               ),)
                             ],
-                          )
+                          ),
+                          Row(
+                            children: [
+                              SizedBox(width: 10,),
+                              Text('Paid Period 1 Sept 2024-30 sept 2024',style: GoogleFonts.inter(
+                                fontSize: 12,
+                                fontWeight: FontWeight.w400,
+                                color: Appcolors.onbsubtext,
+                              ),)
+                            ],
+                          ),
+                          SizedBox(height: 10,),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Container(
+                                height: 72,
+                                width: 155,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Appcolors.off_white,
+                                ),
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 10,),
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Image.asset(Appicons.clock_icon),
+                                        Text('Today',style: GoogleFonts.inter(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: Appcolors.gray_light,
+                                        ),)
+                                        
+                                      ],
+                                    ),
+                                    // SizedBox(height: 10,),
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Text('00:00 Hrs',style: GoogleFonts.inter(
+                                         fontSize: 20,
+                                         fontWeight: FontWeight.w400,
+                                         color: Appcolors.blac,
+                                         ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Container(
+                                height: 72,
+                                width: 155,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(10),
+                                  color: Appcolors.off_white,
+                                ),
+                                child: Column(
+                                  children: [
+                                    SizedBox(height: 10,),
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Image.asset(Appicons.clock_icon),
+                                        Text('This Pay Period',style: GoogleFonts.inter(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w500,
+                                          color: Appcolors.gray_light,
+                                        ),)
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Text('32:00 Hrs',style: GoogleFonts.inter(
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w400,
+                                          color: Appcolors.blac,
+                                        ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 15,),
+                          MainButton(color: Colors.white, fontsize: 14, text: 'Clock In'),
                         ],
                       ),
                     ),
@@ -100,6 +191,213 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
               )
             ],
           ),
+          SizedBox(height: 15,),
+          Container(
+            height: 118,
+            width: MediaQuery.of(context).size.width*0.92,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Appcolors.white_color,
+            ),
+            child: Column(
+              children: [
+                SizedBox(height: 10,),
+                Row(
+                  children: [
+                    SizedBox(width: 15,),
+                    Text('27 september 2024',style: GoogleFonts.inter(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: Appcolors.onbmaintext,
+                    ),)
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Container(
+                  height: 62,
+                  width: MediaQuery.of(context).size.width*0.85,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Appcolors.botomsheet,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [
+                           SizedBox(height: 10,),
+                          Text('Total Hours',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                      Text('08:00hrs ',style: GoogleFonts.inter(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w500,
+                        color: Appcolors.onbmaintext,
+                      ),)
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          SizedBox(height: 10,),
+                          Text('Clock in & out',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                          Text('09:00AM-05:00PM',style: GoogleFonts.inter(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbmaintext,
+                          ),)
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          SizedBox(height: 15,),
+          Container(
+            height: 118,
+            width: MediaQuery.of(context).size.width*0.92,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Appcolors.white_color,
+            ),
+            child: Column(
+              children: [
+                SizedBox(height: 10,),
+                Row(
+                  children: [
+                    SizedBox(width: 15,),
+                    Text('26 september 2024',style: GoogleFonts.inter(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: Appcolors.onbmaintext,
+                    ),)
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Container(
+                  height: 62,
+                  width: MediaQuery.of(context).size.width*0.85,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Appcolors.botomsheet,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(height: 10,),
+                          Text('Total Hours',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                          Text('08:00hrs ',style: GoogleFonts.inter(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbmaintext,
+                          ),)
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          SizedBox(height: 10,),
+                          Text('Clock in & out',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                          Text('09:00AM-05:00PM',style: GoogleFonts.inter(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbmaintext,
+                          ),)
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 15,),
+          Container(
+            height: 118,
+            width: MediaQuery.of(context).size.width*0.92,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(15),
+              color: Appcolors.white_color,
+            ),
+            child: Column(
+              children: [
+                SizedBox(height: 10,),
+                Row(
+                  children: [
+                    SizedBox(width: 15,),
+                    Text('25 september 2024',style: GoogleFonts.inter(
+                      fontWeight: FontWeight.w600,
+                      fontSize: 14,
+                      color: Appcolors.onbmaintext,
+                    ),)
+                  ],
+                ),
+                SizedBox(height: 10,),
+                Container(
+                  height: 62,
+                  width: MediaQuery.of(context).size.width*0.85,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Appcolors.botomsheet,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [
+                          SizedBox(height: 10,),
+                          Text('Total Hours',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                          Text('08:00hrs ',style: GoogleFonts.inter(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbmaintext,
+                          ),)
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          SizedBox(height: 10,),
+                          Text('Clock in & out',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbsubtext,
+                          ),),
+                          Text('09:00AM-05:00PM',style: GoogleFonts.inter(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.onbmaintext,
+                          ),)
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+
         ],
       )
     );

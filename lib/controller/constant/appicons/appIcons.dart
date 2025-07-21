@@ -27,4 +27,5 @@ class Appicons{
    static const String user_icon2 ='lib/assets/user_icon.png';
    static const String date_of_birth_icon='lib/assets/date_of_birth_icon.png';
    static const String gender_selection_icon = 'lib/assets/gender_selection_icon.png';
+   static const String clock_icon ='lib/assets/clock_icon.png';
 }

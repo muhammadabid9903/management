@@ -28,4 +28,6 @@ class Appcolors{
   static Color smaallcont= Color(0xffD0D5DD);
   static Color proficoncolor= Color(0xff9B8AFB);
   static Color home_background =Color(0xff7155ff);
+  static Color off_white =Color(0xfff9f9f9);
+  static Color blac =Color(0xff161b23);
 }
