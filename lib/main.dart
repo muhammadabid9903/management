@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/home_screens/homescreen.dart';
+import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
@@ -36,21 +37,20 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-<<<<<<< HEAD
-            home: SigninScreen1(),
-        //   home: SigninScreen2(),
+
+      // home: SigninScreen1(),
+      //  home: SigninScreen2(),
       //  home: SigninScreen3(),
-      //     home: Homescreen(),
+      //  home: Homescreen(),
       //  home: SigninScreen5(),
       //  home: SigninScreen6(),
-=======
-        // home: SigninScreen1(),
+
+      // home: SigninScreen1(),
       // home: SigninScreen2(),
       // home: SigninScreen3(),
-          home: WorkProfileScreen(),
+      // home: WorkProfileScreen(),
       // home: SigninScreen5(),
       // home: SigninScreen6(),
->>>>>>> b6b8adffb817b098e88705ee073f91588633e08b
       // home: SigninphoneScreen1(),
       // home: SigninphoneScreen2(),
       // home: SinginStartScreen(),
@@ -59,8 +59,9 @@ class MyApp extends StatelessWidget {
       // home: SigninemployeeidScreen(),
       // home: SignUp1(),
       // home: SignUp1(),
-      //    home: WorkProfileScreen(),
+      //  home: WorkProfileScreen(),
       // home: SigninphoneOtpScreen(),
+      home: LetsClockInScreen(),
 );
   }
 }

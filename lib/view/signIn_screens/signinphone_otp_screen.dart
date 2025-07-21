@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
-import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/home_screens/homescreen.dart';
 
 class SigninphoneOtpScreen extends StatefulWidget {
   const SigninphoneOtpScreen({super.key});

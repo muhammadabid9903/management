@@ -6,7 +6,7 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
-import 'package:management/view/signIn_screens/homescreen.dart';
+import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 
