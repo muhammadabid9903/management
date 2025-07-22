@@ -51,5 +51,7 @@ class Appimages{
   static String profman='assets/profimg.png';
   static String frame='assets/frame.png';
   static String account='assets/account.png';
+  static String for1='assets/for1.png';
+  static String for12='assets/for2.png';
 
 }

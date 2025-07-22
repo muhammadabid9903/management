@@ -255,7 +255,7 @@ class _Signup2State extends State<Signup2> {
                   fontWeight: FontWeight.bold,
                 ),
                 TextButton(
-                  onPressed: () {
+                  onPressed: () {//---------------------------------------------
                     showModalBottomSheet(
                         context: context,
                         // isScrollControlled: true,
@@ -562,9 +562,12 @@ class _Signup2State extends State<Signup2> {
                                               alignment: Alignment.center,
                                               child: TextButton(
                                                   onPressed: () {
-                                                    nextPage();
+
+                                                    
+                                                    // nextPage();
                                                   },
                                                   child: MainButton(
+
                                                     color: Colors.white,
                                                     fontsize: 14,
                                                     text: 'Submit',

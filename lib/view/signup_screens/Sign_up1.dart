@@ -118,7 +118,8 @@ class _SignUp1State extends State<SignUp1> {
 
           Padding(
             padding: const EdgeInsets.only(left: 15),
-            child: Row(
+            child:
+            Row(
               children: [
                 Checkbox(
                   side: BorderSide(color: Appcolors.maincolor),
