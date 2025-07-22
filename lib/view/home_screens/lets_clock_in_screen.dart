@@ -16,6 +16,7 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color(0xfff1f3f8),
       body: Column(
         children: [
           Stack(
@@ -64,7 +65,7 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
                    ),
                    Image.asset(Appimages.homebackground_image),
                  ],
-               )
+               ),
                 ],
               ),
               Center(

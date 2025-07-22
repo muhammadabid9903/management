@@ -17,6 +17,7 @@ class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xfff1f3f8),
       bottomNavigationBar: BottomNavigationBar(
          backgroundColor: Appcolors.black_color,
         unselectedItemColor: Appcolors.white_color,
@@ -51,7 +52,7 @@ class _HomescreenState extends State<Homescreen> {
           ),
         ],
       ),
-      backgroundColor: Color(0xfff1f3f8),
+      // backgroundColor: Color(0xfff1f3f8),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -398,6 +399,8 @@ class _HomescreenState extends State<Homescreen> {
                       ),)
                     ],
                   ),
+
+
                   SizedBox(height: 20,),
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
@@ -512,6 +515,10 @@ class _HomescreenState extends State<Homescreen> {
                       ],
                     ),
                   ),
+
+
+
+
                 ],
               ),
             ),
