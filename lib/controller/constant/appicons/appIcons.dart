@@ -28,4 +28,6 @@ class Appicons{
    static const String date_of_birth_icon='lib/assets/date_of_birth_icon.png';
    static const String gender_selection_icon = 'lib/assets/gender_selection_icon.png';
    static const String clock_icon ='lib/assets/clock_icon.png';
+   static const String to_do_icon ='lib/assets/to_do_icon.png';
+    static const String workdone_icon ='lib/assets/work_done_icon.png';
 }

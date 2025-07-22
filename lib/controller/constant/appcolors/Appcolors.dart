@@ -30,4 +30,6 @@ class Appcolors{
   static Color home_background =Color(0xff7155ff);
   static Color off_white =Color(0xfff9f9f9);
   static Color blac =Color(0xff161b23);
+  static Color high_cream =Color(0xffcbecee);
+  static Color yellow_light =Color(0xfff79009);
 }

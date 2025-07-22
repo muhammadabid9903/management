@@ -19,18 +19,19 @@ class _LetsClockInScreenState extends State<LetsClockInScreen> {
       body: Column(
         children: [
           Stack(
-            children: [
-              Container(
-                height: 233,
-              width: MediaQuery.of(context).size.width*1,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(20),
-                      bottomRight: Radius.circular(20)
-                  ),
-                  color: Appcolors.home_background,
-                ),
-              ),
+             children: [
+            //   Container(
+            //     height: 233,
+            //   width: MediaQuery.of(context).size.width*1,
+            //     decoration: BoxDecoration(
+            //       borderRadius: BorderRadius.only(
+            //           bottomLeft: Radius.circular(20),
+            //           bottomRight: Radius.circular(20)
+            //       ),
+            //       color: Appcolors.home_background,
+            //     ),
+            //   ),
+               Image.asset(Appimages.homescreens_background),
               Column(
                 children: [
                   SizedBox(height: 50,),

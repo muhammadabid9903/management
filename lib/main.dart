@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:management/view/home_screens/challange_awaiting_screen.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
@@ -61,7 +62,8 @@ class MyApp extends StatelessWidget {
       // home: SignUp1(),
       //  home: WorkProfileScreen(),
       // home: SigninphoneOtpScreen(),
-      home: LetsClockInScreen(),
+      //  home: LetsClockInScreen(),
+         home: ChallangeAwaitingScreen(),
 );
   }
 }
