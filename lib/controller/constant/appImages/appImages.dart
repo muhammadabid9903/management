@@ -28,6 +28,7 @@ class Appimages{
   static const String profile_image_frame = 'lib/assets/profile_image_frame .png';
  static const String homescreens_background = 'lib/assets/home_screen_background.png';
  static const String homebackground_image='lib/assets/homebackground_image.png';
+ static const String home_background_image3 ='lib/assets/homescreen3background_Image.png';
 
 
 
