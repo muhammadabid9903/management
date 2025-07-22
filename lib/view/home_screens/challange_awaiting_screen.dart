@@ -351,8 +351,8 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                       Image.asset('lib/assets/meesenger_icon.png'),
                       SizedBox(width: 5,),
                       Text('Writing Dashboard Analytics',style: GoogleFonts.inter(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        fontSize: 13,
                         color: Appcolors.onbmaintext,
                       ),),
                     ],
@@ -374,7 +374,7 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                     children: [
                       Container(
                         height: 3,
-                        width: MediaQuery.of(context).size.width*0.66,
+                        width: MediaQuery.of(context).size.width*0.5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Appcolors.maincolor,
@@ -382,7 +382,7 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                       ),
                       Container(
                         height: 3,
-                        width: 40,
+                        width: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Appcolors.low_cream,
@@ -450,7 +450,7 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
             Container(
               padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
               height: 147,
-              width: MediaQuery.of(context).size.width*0.85,
+              width: MediaQuery.of(context).size.width*0.88,
               decoration: BoxDecoration(
                 color:Appcolors.cream_color,
                 borderRadius: BorderRadius.circular(10),
@@ -463,9 +463,9 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                     children: [
                       // SizedBox(width: 10,),
                       Image.asset('lib/assets/meesenger_icon.png'),
-                      SizedBox(width: 5,),
-                      Text('Writing Dashboard Analytics',style: GoogleFonts.inter(
-                        fontWeight: FontWeight.w500,
+                      // SizedBox(width: 5,),
+                      Text('API Dashboard Analytics Integration',style: GoogleFonts.inter(
+                        fontWeight: FontWeight.w600,
                         fontSize: 13,
                         color: Color(0xff2b2b2b),
                       ),),
@@ -488,7 +488,7 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                     children: [
                       Container(
                         height: 3,
-                        width: MediaQuery.of(context).size.width*0.66,
+                        width: MediaQuery.of(context).size.width*0.5,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Appcolors.maincolor,
@@ -496,7 +496,7 @@ class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
                       ),
                       Container(
                         height: 3,
-                        width: 40,
+                        width: 80,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           color: Appcolors.low_cream,

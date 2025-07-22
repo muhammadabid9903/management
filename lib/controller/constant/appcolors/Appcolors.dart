@@ -32,4 +32,6 @@ class Appcolors{
   static Color blac =Color(0xff161b23);
   static Color high_cream =Color(0xffcbecee);
   static Color yellow_light =Color(0xfff79009);
+  static Color screens_background = Color(0xfff1f3f8);
+  static Color green_light =Color(0xff19b36e);
 }
