@@ -255,7 +255,8 @@ class _Signup2State extends State<Signup2> {
                   fontWeight: FontWeight.bold,
                 ),
                 TextButton(
-                  onPressed: () {
+                  //--------------------------------bottom sheeet code starts------------------------------------------------------------------
+                  onPressed: () {//---------------------------------------------
                     showModalBottomSheet(
                         context: context,
                         // isScrollControlled: true,
@@ -279,352 +280,372 @@ class _Signup2State extends State<Signup2> {
                             Container(
                               height: MediaQuery.of(context).size.height *
                                   0.4, // Fixed height
-                              child: PageView(
-                                  controller: pageController,
-                                  onPageChanged: (index) {
-                                    index = i;
-                                  },
-                                  children: [
-                                    Container(
-                                      width: double.infinity,
-                                      height:
-                                          MediaQuery.of(context).size.height *
-                                              0.4,
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          SizedBox(
-                                            height: 70,
-                                          ),
-                                          Align(
-                                              alignment: Alignment.center,
-                                              child: Mytextwidget(
-                                                fontcolor: Colors.black,
-                                                fontsize: 20,
-                                                text:
-                                                    'Email Verification Sent!',
-                                                fontWeight: FontWeight.bold,
-                                              )),
-                                          SizedBox(
-                                            height: 20,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(left: 30),
-                                            child: Mytextwidget(
-                                              fontcolor: Colors.black,
-                                              fontsize: 12,
-                                              text:
-                                                  'A verification code will be sent to email\n'
-                                                  'Hello@gmail.com for your account verification process.',
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 20,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(left: 30),
-                                            child: Row(
-                                              children: [
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                                Container(
-                                                  height: 50,
-                                                  width: 50,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            10),
-                                                    border: Border.all(
-                                                        color: Appcolors
-                                                            .smaallcont),
-                                                  ),
-                                                  child: Center(
-                                                    child: TextFormField(
-                                                      decoration:
-                                                          InputDecoration(
-                                                        border:
-                                                            InputBorder.none,
-                                                        hintText: '0',
-                                                        hintStyle: TextStyle(
-                                                          fontSize: 30,
-                                                          color: Appcolors
-                                                              .entertext,
-                                                        ),
-                                                        contentPadding:
-                                                            EdgeInsets.only(
-                                                                left: 14),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 7,
-                                                ),
-                                              ],
-                                            ),
-                                          ), //container row-------------------------------------------------------------
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          Padding(
-                                            padding:
-                                                const EdgeInsets.only(left: 30),
-                                            child: Row(
-                                              children: [
-                                                Mytextwidget(
-                                                  fontcolor: Colors.black,
-                                                  fontsize: 12,
-                                                  text:
-                                                      "Haven't received the verification code?",
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                                Mytextwidget(
-                                                  fontcolor:
-                                                      Appcolors.maincolor,
-                                                  fontsize: 12,
-                                                  text: "Resend it ",
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 30,
-                                          ),
-                                          Align(
-                                              alignment: Alignment.center,
-                                              child: TextButton(
-                                                  onPressed: () {
-                                                    nextPage();
-                                                  },
-                                                  child: MainButton(
-                                                    color: Colors.white,
-                                                    fontsize: 14,
-                                                    text: 'Submit',
-                                                    fontWeight: FontWeight.bold,
-                                                  )))
-                                        ],
-                                      ),
+                              child: Container(
+                                width: double.infinity,
+                                height:
+                                    MediaQuery.of(context).size.height *
+                                        0.4,
+                                child:
+                              Column(
+                                crossAxisAlignment:
+                                    CrossAxisAlignment.start,
+                                children: [
+                                  SizedBox(
+                                    height: 70,
+                                  ),
+                                  Align(
+                                      alignment: Alignment.center,
+                                      child: Mytextwidget(
+                                        fontcolor: Colors.black,
+                                        fontsize: 20,
+                                        text:
+                                            'Email Verification Sent!',
+                                        fontWeight: FontWeight.bold,
+                                      )),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.only(left: 30),
+                                    child: Mytextwidget(
+                                      fontcolor: Colors.black,
+                                      fontsize: 12,
+                                      text:
+                                          'A verification code will be sent to email\n'
+                                          'Hello@gmail.com for your account verification process.',
+                                      fontWeight: FontWeight.w500,
                                     ),
-                                    Column(
+                                  ),
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.only(left: 30),
+                                    child: Row(
                                       children: [
-                                        SizedBox(
-                                          height: 70,
-                                        ),
-                                        Align(
-                                            alignment: Alignment.center,
-                                            child: Mytextwidget(
-                                              fontcolor: Colors.black,
-                                              fontsize: 20,
-                                              text: 'Welcome To Workmate',
-                                              fontWeight: FontWeight.bold,
-                                            )),
-                                        SizedBox(
-                                          height: 20,
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsets.only(left: 30),
-                                          child: Mytextwidget(
-                                            fontcolor: Colors.black,
-                                            fontsize: 12,
-                                            text:
-                                                'To enhance your user experience,please set up your\n'
-                                                'profile first. This will help us tailer the app to your needs \n'
-                                                'and ensure you get the most out of our features! ',
-                                            fontWeight: FontWeight.w600,
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 20,
+                                          width: 7,
                                         ),
-                                        Align(
-                                          alignment: Alignment.center,
-                                          child: MainButton(
-                                              color: Colors.white,
-                                              fontsize: 14,
-                                              text: 'Set up my Profile'),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                         SizedBox(
-                                          height: 20,
+                                          width: 7,
                                         ),
-                                        Align(
-                                          alignment: Alignment.center,
-                                          child: Skipbutton(
-                                              text: 'Explore the App first',
-                                              fontsize: 14,
-                                              color: Appcolors.maincolor),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 7,
+                                        ),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 7,
+                                        ),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 7,
+                                        ),
+                                        Container(
+                                          height: 50,
+                                          width: 50,
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(
+                                                    10),
+                                            border: Border.all(
+                                                color: Appcolors
+                                                    .smaallcont),
+                                          ),
+                                          child: Center(
+                                            child: TextFormField(
+                                              decoration:
+                                                  InputDecoration(
+                                                border:
+                                                    InputBorder.none,
+                                                hintText: '0',
+                                                hintStyle: TextStyle(
+                                                  fontSize: 30,
+                                                  color: Appcolors
+                                                      .entertext,
+                                                ),
+                                                contentPadding:
+                                                    EdgeInsets.only(
+                                                        left: 14),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 7,
                                         ),
                                       ],
-                                    )
-                                  ]),
+                                    ),
+                                  ), //container row-------------------------------------------------------------
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Padding(
+                                    padding:
+                                        const EdgeInsets.only(left: 30),
+                                    child: Row(
+                                      children: [
+                                        Mytextwidget(
+                                          fontcolor: Colors.black,
+                                          fontsize: 12,
+                                          text:
+                                              "Haven't received the verification code?",
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                        Mytextwidget(
+                                          fontcolor:
+                                              Appcolors.maincolor,
+                                          fontsize: 12,
+                                          text: "Resend it ",
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 30,
+                                  ),
+                                  Align(
+                                    alignment: Alignment.center,
+                                    child: TextButton(
+                                      onPressed: () {
+                                        Navigator.pop(context); // ✅ Close the first bottom sheet
+
+                                        Future.delayed(Duration(milliseconds: 200), () {
+                                          showModalBottomSheet(
+                                            context: context,
+                                            builder: (context) {
+                                              return Stack(
+                                                clipBehavior: Clip.none,
+                                                children: [
+                                                  Positioned(
+                                                    top: -45,
+                                                    left: 140,
+                                                    child: Image.asset(
+                                                      Appimages.signup1,
+                                                      height: 120,
+                                                      width: 120,
+                                                    ),
+                                                  ),
+                                                  SizedBox(height: 30),
+                                                  Container(
+                                                    height: MediaQuery.of(context).size.height * 0.4,
+                                                    width: double.infinity,
+                                                    child: Column(
+                                                      children: [
+                                                        SizedBox(height: 70),
+                                                        Align(
+                                                          alignment: Alignment.center,
+                                                          child: Mytextwidget(
+                                                            fontcolor: Colors.black,
+                                                            fontsize: 20,
+                                                            text: 'Welcome To Workmate',
+                                                            fontWeight: FontWeight.bold,
+                                                          ),
+                                                        ),
+                                                        SizedBox(height: 20),
+                                                        Padding(
+                                                          padding: const EdgeInsets.only(left: 30),
+                                                          child: Mytextwidget(
+                                                            fontcolor: Colors.black,
+                                                            fontsize: 12,
+                                                            text:
+                                                            'To enhance your user experience,please set up your\n'
+                                                                'profile first. This will help us tailer the app to your needs \n'
+                                                                'and ensure you get the most out of our features! ',
+                                                            fontWeight: FontWeight.w600,
+                                                          ),
+                                                        ),
+                                                        SizedBox(height: 20),
+                                                        Align(
+                                                          alignment: Alignment.center,
+                                                          child: MainButton(
+                                                            color: Colors.white,
+                                                            fontsize: 14,
+                                                            text: 'Set up my Profile',
+                                                          ),
+                                                        ),
+                                                        SizedBox(height: 20),
+                                                        Align(
+                                                          alignment: Alignment.center,
+                                                          child: Skipbutton(
+                                                            text: 'Explore the App first',
+                                                            fontsize: 14,
+                                                            color: Appcolors.maincolor,
+                                                          ),
+                                                        ),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                ],
+                                              );
+                                            },
+                                          );
+                                        });
+
+                                        // nextPage(); // Optional navigation call
+                                      },
+                                      child: MainButton(
+                                        color: Colors.white,
+                                        fontsize: 14,
+                                        text: 'Submit',
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                  )
+
+                                ],
+                              ),
+                              ),
                             ),
                           ]);
                         });
