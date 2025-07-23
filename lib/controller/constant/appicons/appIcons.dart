@@ -31,4 +31,5 @@ class Appicons{
    static const String to_do_icon ='lib/assets/to_do_icon.png';
     static const String workdone_icon ='lib/assets/work_done_icon.png';
     static const date_icon='lib/assets/date_icon.png';
+    static const work_done_icon ='lib/assets/work_done_icon.png';
 }

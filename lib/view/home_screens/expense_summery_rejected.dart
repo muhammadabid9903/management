@@ -5,19 +5,20 @@ import 'package:management/controller/Widgets/text_Button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
+import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
 
-class ExpenseSummeryApprovedScreen4 extends StatefulWidget {
-  const ExpenseSummeryApprovedScreen4({super.key});
+class ExpenseSummeryRejected extends StatefulWidget {
+  const ExpenseSummeryRejected({super.key});
 
   @override
-  State<ExpenseSummeryApprovedScreen4> createState() => _ExpenseSummeryApprovedScreen4State();
+  State<ExpenseSummeryRejected> createState() => _ExpenseSummeryRejectedState();
 }
 
-class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedScreen4> {
+class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Appcolors.screens_background,
       body: SingleChildScrollView(
         child:
         Column(
@@ -224,55 +225,68 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  TextButon
-                    (child:
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Text('Review',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.white_color,
-                      ),),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                    },
+                    child: TextButon
+                      (child:
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Text('Review',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.white_color,
+                        ),),
 
-                      CircleAvatar(
-                        backgroundColor: Appcolors.orang_light,
-                        radius: 9,
-                        child: Center(
-                          child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
-                        ),
-                      )
-                      // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
-                    ],
+                        CircleAvatar(
+                          backgroundColor: Appcolors.orang_light,
+                          radius: 9,
+                          child: Center(
+                            child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
+                          ),
+                        )
+                        // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
+                      ],
+                    ),
+                    ),
                   ),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
+                    },
+                    child: Row(
+                      children: [
+                        Text('Approved',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                        SizedBox(width: 2,),
+                        Image.asset('lib/assets/circle_numeric3_icon.png'),
+                      ],
+                    ),
                   ),
-                  Row(
-                    children: [
-                      Text('Approved',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
-                      ),),
-                      SizedBox(width: 2,),
-                      Image.asset('lib/assets/circle_numeric3_icon.png'),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Text('Rejected',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
-                      ),),
-                      SizedBox(width: 2,),
-                      Image.asset('lib/assets/circle_numeric2_icon.png'),
-                    ],
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
+                    },
+                    child: Row(
+                      children: [
+                        Text('Rejected',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                        SizedBox(width: 2,),
+                        Image.asset('lib/assets/circle_numeric2_icon.png'),
+                      ],
+                    ),
                   ),
                 ],
               ),
             ),
-
-
             SizedBox(height: 15,),
             Container(
               height: 150,
@@ -350,12 +364,12 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
                       SizedBox(width: 10,),
                       Row(
                         children: [
-                          Image.asset(Appicons.workdone_icon),
+                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
                           SizedBox(width: 5,),
-                          Text('Approved at 19 Sept 2024',style: GoogleFonts.inter(
+                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: Appcolors.green_light,
+                            color: Appcolors.red_color,
                           ),),
                         ],
                       ),
@@ -458,12 +472,12 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
                       SizedBox(width: 10,),
                       Row(
                         children: [
-                          Image.asset(Appicons.workdone_icon),
+                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
                           SizedBox(width: 5,),
-                          Text('Approved at 19 Sept 2024',style: GoogleFonts.inter(
+                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: Appcolors.green_light,
+                            color: Appcolors.red_color,
                           ),),
                         ],
                       ),
@@ -567,12 +581,12 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
                       SizedBox(width: 10,),
                       Row(
                         children: [
-                          Image.asset(Appicons.workdone_icon),
+                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
                           SizedBox(width: 5,),
-                          Text('Approved at 19 Sept 2024',style: GoogleFonts.inter(
+                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: Appcolors.green_light,
+                            color: Appcolors.red_color,
                           ),),
                         ],
                       ),
@@ -608,11 +622,11 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
                 (
                 child: MainButton(color: Appcolors.white_color, fontsize:15, text: 'Submit Expense'),
               ),
-            )
-
+            ),
           ],
         ),
       ),
+
     );
   }
 }

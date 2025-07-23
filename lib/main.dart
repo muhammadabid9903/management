@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:management/view/Forgot_password/Forgot1_screen.dart';
 import 'package:management/view/home_screens/challange_awaiting_screen.dart';
 import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
+import 'package:management/view/home_screens/expense_summery_rejected.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
@@ -69,8 +70,9 @@ class MyApp extends StatelessWidget {
 
       //  home: ChallangeAwaitingScreen(),
       //    home: SummeryExpenseReviewScreen4(),
-         home: ExpenseSummeryApprovedScreen4(),
-         // home: Signup2(),
+      //    home: ExpenseSummeryApprovedScreen4(),
+        home: ExpenseSummeryRejected(),
+      // home: Signup2(),
 );
   }
 }
