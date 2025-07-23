@@ -24,7 +24,7 @@ class _MainButtonState extends State<MainButton> {
 
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width*0.9,
+      width: MediaQuery.of(context).size.width*0.85,
       height: 48,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(100),

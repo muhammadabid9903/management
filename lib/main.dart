@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/Forgot_password/Forgot1_screen.dart';
 import 'package:management/view/home_screens/challange_awaiting_screen.dart';
+import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
-import 'package:management/view/home_screens/summery_expense_screen4.dart';
+import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
@@ -65,16 +66,11 @@ class MyApp extends StatelessWidget {
       //  home: WorkProfileScreen(),
       //  home: SigninphoneOtpScreen(),
       //  home: LetsClockInScreen(),
-<<<<<<< HEAD
+
       //  home: ChallangeAwaitingScreen(),
-         home: SummeryExpenseScreen4(),
-
-
-
-
-=======
-         home: Signup2(),
->>>>>>> f5915e29293f0dff4feb94d73837c72e278e2107
+      //    home: SummeryExpenseReviewScreen4(),
+         home: ExpenseSummeryApprovedScreen4(),
+         // home: Signup2(),
 );
   }
 }

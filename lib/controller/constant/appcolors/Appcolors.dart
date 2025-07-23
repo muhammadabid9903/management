@@ -34,4 +34,5 @@ class Appcolors{
   static Color yellow_light =Color(0xfff79009);
   static Color screens_background = Color(0xfff1f3f8);
   static Color green_light =Color(0xff19b36e);
+  static Color orang_light =Color(0xfff95555);
 }

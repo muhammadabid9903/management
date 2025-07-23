@@ -11,23 +11,25 @@ Widget child;
 }
 
 class _RowButtonState extends State<RowButton> {
-  @override
-  Widget build(BuildContext context) {
-    return  Container(
-<<<<<<< HEAD
-      width: MediaQuery.of(context).size.width*0.75,
-=======
-      width: MediaQuery.of(context).size.width*0.9,
->>>>>>> f5915e29293f0dff4feb94d73837c72e278e2107
-      height: 48,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(100),
-          border: Border.all(color: Color(0xff7A5AF8),)
-      ),
-      child: Center(
-        child: widget.child,
 
-      ),
-    );
-  }
+@override
+Widget build(BuildContext context) {
+  return Container(
+
+    width: MediaQuery
+        .of(context)
+        .size
+        .width * 0.75,
+    // width: MediaQuery.of(context).size.width*0.9,
+    height: 48,
+    decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(100),
+        border: Border.all(color: Color(0xff7A5AF8),)
+    ),
+    child: Center(
+      child: widget.child,
+
+    ),
+  );
+}
 }
