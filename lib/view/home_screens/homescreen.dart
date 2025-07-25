@@ -79,14 +79,14 @@ class _HomescreenState extends State<Homescreen> {
                         Text('Tonald Drump',style: GoogleFonts.poppins(
                           fontSize: 15,
                           fontWeight: FontWeight.w500,
-                          color: Color(0xff2d2d2d),
+                          color: Appcolors.choklet,
                         ),),
                          SizedBox(width: 20,),
                         Image.asset('lib/assets/profile_icon.png'),
                         SizedBox(width: 30,),
                       ],
                     ),
-                     SizedBox(width: 30,),
+                     // SizedBox(width: 30,),
                     Text('Junior Full Stack Developer',style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w500,
                       fontSize: 12,

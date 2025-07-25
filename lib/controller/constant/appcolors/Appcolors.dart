@@ -8,7 +8,7 @@ class Appcolors{
   static Color signinicon=Color(0xff7A5AF8);
   static Color signinback=Color(0xff101321DE);
   static Color signinsuccesscontainer=Color(0xff795FFC);
-  // static Color signinsuccesssubcontainer=Color(0xffF95555);
+   static Color signinsuccesssubcontainer=Color(0xffF95555);
   static Color entertext=Color(0xff98A2B3);
   static Color profcontainer=Color(0xffF4F6F9);
   static Color signin_color=Color(0xfffefefe);
@@ -35,4 +35,5 @@ class Appcolors{
   static Color screens_background = Color(0xfff1f3f8);
   static Color green_light =Color(0xff19b36e);
   static Color orang_light =Color(0xfff95555);
+  static Color choklet =Color(0xff2d2d2d);
 }

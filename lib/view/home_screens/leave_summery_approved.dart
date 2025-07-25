@@ -5,23 +5,22 @@ import 'package:management/controller/Widgets/text_Button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
-import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
-import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
+import 'package:management/view/home_screens/leave_summery_rejected.dart';
+import 'package:management/view/home_screens/leave_summery_review.dart';
 
-class ExpenseSummeryRejected extends StatefulWidget {
-  const ExpenseSummeryRejected({super.key});
+class LeaveSummeryApproved extends StatefulWidget {
+  const LeaveSummeryApproved({super.key});
 
   @override
-  State<ExpenseSummeryRejected> createState() => _ExpenseSummeryRejectedState();
+  State<LeaveSummeryApproved> createState() => _LeaveSummeryApprovedState();
 }
 
-class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
+class _LeaveSummeryApprovedState extends State<LeaveSummeryApproved> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child:
-        Column(
+      body:  SingleChildScrollView(
+        child: Column(
           children: [
             Stack(
               children: [
@@ -38,7 +37,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                             Row(
                               children: [
                                 // SizedBox(width: 30,),
-                                Text('Expense Summery',style: GoogleFonts.inter(
+                                Text('Leave Summery',style: GoogleFonts.inter(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w600,
                                   color: Appcolors.white_color,
@@ -49,7 +48,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
                                 // SizedBox(width: 30,),
-                                Text('Claim your expenses here',style: GoogleFonts.inter(
+                                Text('Submit leave',style: GoogleFonts.inter(
                                   fontSize: 10,
                                   fontWeight: FontWeight.w600,
                                   color: Appcolors.white_color,
@@ -77,7 +76,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                             Row(
                               children: [
                                 SizedBox(width: 10,),
-                                Text('Total expense',style: GoogleFonts.inter(
+                                Text('Total leave',style: GoogleFonts.inter(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w600,
                                   color: Appcolors.onbmaintext,
@@ -98,9 +97,10 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: [
+
                                 Container(
                                   height: 72,
-                                  width: 100,
+                                  width: 163,
                                   decoration:
                                   BoxDecoration(
                                     color: Appcolors.off_white,
@@ -112,90 +112,21 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                                       SizedBox(height: 10,),
                                       Row(
                                         children: [
-                                          SizedBox(width: 10,),
-                                          Image.asset(Appicons.to_do_icon),
-                                          Text('Total',style: GoogleFonts.inter(
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w500,
-                                            color: Appcolors.onbsubtext,
-                                          ),)
-                                        ],
-                                      ),
-                                      // SizedBox(height: 10,),
-                                      Text('\$1010',style: GoogleFonts.inter(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 20,
-                                        color: Appcolors.onbmaintext,
-                                      ),)
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  height: 72,
-                                  width: 100,
-                                  decoration:
-                                  BoxDecoration(
-                                    color: Appcolors.off_white,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(color: Appcolors.high_cream),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      SizedBox(height: 10,),
-                                      Row(
-                                        children: [
-                                          SizedBox(width: 5,),
+                                          SizedBox(width: 30,),
                                           // Image.asset(Appicons.clock_icon,color: Appcolors.yellow_light,),
-                                          CircleAvatar(
-                                            backgroundColor: Appcolors.yellow_light,
-                                            radius: 5,
-                                          ),
-                                          SizedBox(width: 3,),
-                                          Text('Review',style: GoogleFonts.inter(
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w500,
-                                            color: Appcolors.onbsubtext,
-                                          ),),
-                                        ],
-                                      ),
-                                      Text('\$455',style: GoogleFonts.inter(
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 20,
-                                        color: Appcolors.onbmaintext,
-                                      ),)
-                                    ],
-                                  ),
-                                ),
-                                Container(
-                                  height: 72,
-                                  width: 100,
-                                  decoration:
-                                  BoxDecoration(
-                                    color: Appcolors.off_white,
-                                    borderRadius: BorderRadius.circular(10),
-                                    border: Border.all(color: Appcolors.high_cream),
-                                  ),
-                                  child: Column(
-                                    children: [
-                                      SizedBox(height: 10,),
-                                      Row(
-                                        children: [
-                                          SizedBox(width: 10,),
-                                          // Image.asset(Appicons.workdone_icon),
                                           CircleAvatar(
                                             backgroundColor: Appcolors.green_light,
                                             radius: 5,
                                           ),
-                                          SizedBox(width: 3,),
-                                          Text('Approved',style: GoogleFonts.inter(
+                                          SizedBox(width: 7,),
+                                          Text('Available',style: GoogleFonts.inter(
                                             fontSize: 12,
                                             fontWeight: FontWeight.w500,
                                             color: Appcolors.onbsubtext,
                                           ),),
                                         ],
                                       ),
-
-                                      Text('\$555',style: GoogleFonts.inter(
+                                      Text('20',style: GoogleFonts.inter(
                                         fontWeight: FontWeight.w400,
                                         fontSize: 20,
                                         color: Appcolors.onbmaintext,
@@ -203,7 +134,43 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                                     ],
                                   ),
                                 ),
+                                Container(
+                                  height: 72,
+                                  width: 163,
+                                  decoration:
+                                  BoxDecoration(
+                                    color: Appcolors.off_white,
+                                    borderRadius: BorderRadius.circular(10),
+                                    border: Border.all(color: Appcolors.high_cream),
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      SizedBox(height: 10,),
+                                      Row(
+                                        children: [
+                                          SizedBox(width: 30,),
+                                          // Image.asset(Appicons.workdone_icon),
+                                          CircleAvatar(
+                                            backgroundColor: Appcolors.signinicon,
+                                            radius: 5,
+                                          ),
+                                          SizedBox(width: 7,),
+                                          Text('Leave Used',style: GoogleFonts.inter(
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w500,
+                                            color: Appcolors.onbsubtext,
+                                          ),),
+                                        ],
+                                      ),
 
+                                      Text('2',style: GoogleFonts.inter(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 20,
+                                        color: Appcolors.onbmaintext,
+                                      ),)
+                                    ],
+                                  ),
+                                ),
                               ],
                             )
                           ],
@@ -227,7 +194,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                 children: [
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryReview()));
                     },
                     child: TextButon
                       (child:
@@ -254,7 +221,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
                     },
                     child: Row(
                       children: [
@@ -270,7 +237,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
+                       Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryRejected()));
                     },
                     child: Row(
                       children: [
@@ -304,7 +271,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                       SizedBox(width: 15,),
                       Image.asset(Appicons.date_icon),
                       SizedBox(width: 10,),
-                      Text('27 September 2024',style: GoogleFonts.inter(
+                      Text('10 November 2024',style: GoogleFonts.inter(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
                         color: Appcolors.onbmaintext,
@@ -325,12 +292,12 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Type',style: GoogleFonts.inter(
+                            Text('Leave date',style: GoogleFonts.inter(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
                               color: Appcolors.gray,
                             ),),
-                            Text('E-Learning',style: GoogleFonts.inter(
+                            Text('11 Nov-13 Nov',style: GoogleFonts.inter(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                               color: Appcolors.black2,
@@ -341,126 +308,12 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                         Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text('Total Expense',style: GoogleFonts.inter(
+                            Text('Total Leave',style: GoogleFonts.inter(
                               fontSize: 12,
                               fontWeight: FontWeight.w500,
                               color: Appcolors.gray,
                             ),),
-                            Text('\$55',style: GoogleFonts.inter(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.black2,
-                            ),)
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-
-                  SizedBox(height: 10,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      SizedBox(width: 10,),
-                      Row(
-                        children: [
-                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
-                          SizedBox(width: 5,),
-                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.red_color,
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 40,),
-                      Row(
-                        children: [
-                          Text('By',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.onbmaintext,
-                          ),),
-                          Image.asset(Appimages.teammember_pi3),
-                          Text('Elain',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.onbmaintext,
-                          ),)
-                        ],
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ),
-
-
-
-
-
-
-
-            SizedBox(height: 15,),
-            Container(
-              height: 150,
-              width: MediaQuery.of(context).size.width*0.9,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Appcolors.white_color,
-              ),
-              child: Column(
-                children: [
-                  SizedBox(height: 10,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 15,),
-                      Image.asset(Appicons.date_icon),
-                      SizedBox(width: 10,),
-                      Text('24 September 2024',style: GoogleFonts.inter(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: Appcolors.onbmaintext,
-                      ),)
-                    ],
-                  ),
-                  SizedBox(height: 10,),
-                  Container(
-                    height: 62,
-                    width: MediaQuery.of(context).size.width*0.85,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Appcolors.cream2_color,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Type',style: GoogleFonts.inter(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.gray,
-                            ),),
-                            Text('E-Learning',style: GoogleFonts.inter(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.black2,
-                            ),)
-                          ],
-                        ),
-                        SizedBox(width: 20,),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Total Expense',style: GoogleFonts.inter(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.gray,
-                            ),),
-                            Text('\$55',style: GoogleFonts.inter(
+                            Text('2 days',style: GoogleFonts.inter(
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                               color: Appcolors.black2,
@@ -477,121 +330,12 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                       SizedBox(width: 10,),
                       Row(
                         children: [
-                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
+                          Image.asset(Appicons.workdone_icon),
                           SizedBox(width: 5,),
-                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
+                          Text('Approved at 19 Sept 2024',style: GoogleFonts.inter(
                             fontSize: 12,
                             fontWeight: FontWeight.w500,
-                            color: Appcolors.red_color,
-                          ),),
-                        ],
-                      ),
-                      SizedBox(width: 40,),
-                      Row(
-                        children: [
-                          Text('By',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.onbmaintext,
-                          ),),
-                          Image.asset(Appimages.teammember_pi3),
-                          Text('Elain',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.onbmaintext,
-                          ),)
-                        ],
-                      )
-                    ],
-                  ),
-                ],
-              ),
-            ),
-
-
-
-            SizedBox(height: 15,),
-            Container(
-              height: 150,
-              width: MediaQuery.of(context).size.width*0.9,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(15),
-                color: Appcolors.white_color,
-              ),
-              child: Column(
-                children: [
-                  SizedBox(height: 10,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 15,),
-                      Image.asset(Appicons.date_icon),
-                      SizedBox(width: 10,),
-                      Text('21 September 2024',style: GoogleFonts.inter(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
-                        color: Appcolors.onbmaintext,
-                      ),)
-                    ],
-                  ),
-                  SizedBox(height: 10,),
-                  Container(
-                    height: 62,
-                    width: MediaQuery.of(context).size.width*0.85,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: Appcolors.cream2_color,
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Type',style: GoogleFonts.inter(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.gray,
-                            ),),
-                            Text('E-Learning',style: GoogleFonts.inter(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.black2,
-                            ),)
-                          ],
-                        ),
-                        SizedBox(width: 20,),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text('Total Expense',style: GoogleFonts.inter(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.gray,
-                            ),),
-                            Text('\$55',style: GoogleFonts.inter(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                              color: Appcolors.black2,
-                            ),)
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(height: 10,),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      SizedBox(width: 10,),
-                      Row(
-                        children: [
-                          Image.asset(Appicons.workdone_icon,color: Appcolors.red_color,),
-                          SizedBox(width: 5,),
-                          Text('Rejected at 28 Sept 2024',style: GoogleFonts.inter(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w500,
-                            color: Appcolors.red_color,
+                            color: Appcolors.green_light,
                           ),),
                         ],
                       ),
@@ -613,25 +357,22 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                       )
                     ],
                   )
+
                 ],
               ),
             ),
-
-            SizedBox(height: 20,),
-
+            SizedBox(height: 210,),
             Container(
               height: 76,
               width: MediaQuery.of(context).size.width*1,
               color: Appcolors.white_color,
-              child: Center
-                (
-                child: MainButton(color: Appcolors.white_color, fontsize:15, text: 'Submit Expense'),
-              ),
+              child:
+              Center(
+                  child: MainButton(color: Appcolors.white_color, fontsize: 15, text: 'Submit leave')),
             ),
           ],
         ),
       ),
-
     );
   }
 }
