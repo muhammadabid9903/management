@@ -32,4 +32,6 @@ class Appicons{
     static const String workdone_icon ='lib/assets/work_done_icon.png';
     static const date_icon='lib/assets/date_icon.png';
     static const work_done_icon ='lib/assets/work_done_icon.png';
+    static const location_icon ='lib/assets/location-tick.png';
+    static const email_icon2 ='lib/assets/email_icon2.png';
 }
