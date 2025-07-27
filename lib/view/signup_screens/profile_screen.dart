@@ -5,14 +5,14 @@ import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/signup_screens/work_profile_screen.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+class SignupProfileScreen extends StatefulWidget {
+  const SignupProfileScreen({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ProfileScreenState();
+  State<SignupProfileScreen> createState() => _SignupProfileScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _SignupProfileScreenState extends State<SignupProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return
