@@ -7,6 +7,7 @@ import 'package:management/controller/Widgets/row_button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/profile_screen/profile_screen.dart';
 
 class UpdateProfileScreeen2 extends StatefulWidget {
   const UpdateProfileScreeen2({super.key});
@@ -211,7 +212,7 @@ class _UpdateProfileScreeen2State extends State<UpdateProfileScreeen2> {
                       child: Column(
                         children: [
                           SizedBox(height: 80,),
-                          Text('Update Profile',style: GoogleFonts.inter(
+                          Text('Profile Updated',style: GoogleFonts.inter(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,
                             color: Appcolors.onbmaintext,
@@ -228,7 +229,11 @@ class _UpdateProfileScreeen2State extends State<UpdateProfileScreeen2> {
                             color: Appcolors.onbsubtext,
                           ),),
                           SizedBox(height: 40,),
-                          MainButton(color: Appcolors.white_color, fontsize: 14, text: 'View My profile'),
+                          InkWell(
+                              onTap: (){
+                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>ProfileScreen()));
+                              },
+                              child: MainButton(color: Appcolors.white_color, fontsize: 14, text: 'View My profile')),
                           // SizedBox(height: 20,),
                           SizedBox(height: 40,),
                         ],
