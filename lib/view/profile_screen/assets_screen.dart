@@ -58,7 +58,8 @@ class _AssetsScreenState extends State<AssetsScreen> {
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
                         color: Appcolors.black_color,
-                      ),),
+                        ),
+                      ),
                     ],
                   ),
                   Row(
@@ -98,7 +99,7 @@ class _AssetsScreenState extends State<AssetsScreen> {
                     child: TextFormField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Image.asset(Appicons.user_icon2),
+                        prefixIcon: Image.asset('lib/assets/assetsname_icon.png'),
                         hintText: 'Laptop Macbook Air M1 2020',
                         hintStyle: GoogleFonts.inter(
                           fontSize: 13,
@@ -130,7 +131,7 @@ class _AssetsScreenState extends State<AssetsScreen> {
                     child: TextFormField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Image.asset(Appicons.user_icon2),
+                        prefixIcon: Image.asset(Appicons.assetsbrand_icon),
                         hintText: 'Apple',
                         hintStyle: GoogleFonts.inter(
                           fontSize: 13,
@@ -162,7 +163,7 @@ class _AssetsScreenState extends State<AssetsScreen> {
                     child: TextFormField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Image.asset(Appicons.user_icon2),
+                        prefixIcon: Image.asset(Appicons.settings_icon),
                         hintText: 'Off',
                         hintStyle: GoogleFonts.inter(
                           fontSize: 13,
@@ -194,7 +195,7 @@ class _AssetsScreenState extends State<AssetsScreen> {
                     child: TextFormField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Image.asset(Appicons.user_icon2),
+                        prefixIcon: Image.asset(Appicons.buying_icon),
                         hintText: '12 September 2020',
                         hintStyle: GoogleFonts.inter(
                           fontSize: 13,
@@ -226,7 +227,7 @@ class _AssetsScreenState extends State<AssetsScreen> {
                     child: TextFormField(
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        prefixIcon: Image.asset(Appicons.user_icon2),
+                        prefixIcon: Image.asset(Appicons.date_of_birth_icon),
                         hintText: '14 September 2020',
                         hintStyle: GoogleFonts.inter(
                           fontSize: 13,
@@ -236,12 +237,10 @@ class _AssetsScreenState extends State<AssetsScreen> {
                       ),
                     ),
                   ),
-
                   SizedBox(height: 50,),
-
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

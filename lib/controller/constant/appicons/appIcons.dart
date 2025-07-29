@@ -38,5 +38,8 @@ class Appicons{
      static const keyBoard = 'lib/assets/keyboard.png';
      static const location_icon2 ='lib/assets/location-icon2.png';
      static const profileframe_andicon='lib/assets/profile_frame_and_icon.png';
-
+     static const assetsname_icon ='lib/assets/assetsname_icon.png';
+     static const assetsbrand_icon ='lib/assets/assestbrand_icon.png';
+     static const setting_icon2 = 'libs/assets/setting_icon3.png';
+     static const buying_icon = 'lib/assets/buying_icon.png';
 }
