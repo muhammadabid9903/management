@@ -24,7 +24,7 @@ class Appicons{
   static const String help_detail_icon = 'lib/assets/help_detail_icon.png';
   static const String vesion_icon = 'lib/assets/version_icon.png';
   static const String logout_icon = 'lib/assets/logout_icon.png';
-   static const String user_icon2 ='lib/assets/user_icon.png';
+   static const String user_icon1 ='lib/assets/user_icon.png';
    static const String date_of_birth_icon='lib/assets/date_of_birth_icon.png';
    static const String gender_selection_icon = 'lib/assets/gender_selection_icon.png';
    static const String clock_icon ='lib/assets/clock_icon.png';
@@ -34,4 +34,9 @@ class Appicons{
     static const work_done_icon ='lib/assets/work_done_icon.png';
     static const location_icon ='lib/assets/location-tick.png';
     static const email_icon2 ='lib/assets/email_icon2.png';
+     static const user_icon2 ='lib/assets/user_icon2.png';
+     static const keyBoard = 'lib/assets/keyboard.png';
+     static const location_icon2 ='lib/assets/location-icon2.png';
+     static const profileframe_andicon='lib/assets/profile_frame_and_icon.png';
+
 }

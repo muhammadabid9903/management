@@ -164,7 +164,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               fontSize: 12,
                               fontWeight: FontWeight.w600,
                               color: Appcolors.black2,
-                            ),)
+                            ),),
                           ],
                         ),
                         SizedBox(height: 10,),

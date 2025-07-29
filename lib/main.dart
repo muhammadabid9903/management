@@ -9,7 +9,10 @@ import 'package:management/view/home_screens/leave_summery_rejected.dart';
 import 'package:management/view/home_screens/leave_summery_review.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
+import 'package:management/view/profile_screen/personal_data_screen.dart';
 import 'package:management/view/profile_screen/profile_screen.dart';
+import 'package:management/view/profile_screen/update_profile_screeen1.dart';
+import 'package:management/view/profile_screen/update_profile_screen2.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
@@ -55,15 +58,15 @@ class MyApp extends StatelessWidget {
       //  home: SigninScreen6(),
       //  home: SigninScreen1(),
       //  home: SigninScreen2(),
-      //  home: SigninScreen3(),
+      //   home: SigninScreen3(),
       //  home: WorkProfileScreen(),
       //  home: SigninScreen5(),
-      //  home: SigninScreen6(),
-      //  home: SigninphoneScreen1(),
-      //  home: SigninphoneScreen2(),
+      //   home: SigninScreen6(),
+      //   home: SigninphoneScreen1(),
+      //   home: SigninphoneScreen2(),
       //  home: SinginStartScreen(),
       //    home: SignupProfileScreen(),
-       home: ProfileScreen(),
+      //  home: ProfileScreen(),
       //  SigninemailScreen(),
       //  home: SigninemployeeidScreen(),
       //  home: SignUp1(),
@@ -79,6 +82,10 @@ class MyApp extends StatelessWidget {
       // home: LeaveSummeryApproved(),
       //    home: LeaveSummeryRejected(),
       // home: Signup2(),
+      //  home: PersonalDataScreen(),
+      //   home: UpdateProfileScreeen1(),
+        home: UpdateProfileScreeen2(),
+
     );
   }
 }
