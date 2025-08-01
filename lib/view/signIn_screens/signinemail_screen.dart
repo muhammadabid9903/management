@@ -37,7 +37,7 @@ class _SigninemailScreenState extends State<SigninemailScreen> {
                   width: MediaQuery.of(context).size.width*1,
                   height: 616,
                   decoration: BoxDecoration(
-                    color: Color(0xfffefefe),
+                    color: Appcolors.low_white,
                     border: Border.all(color: Color(0xfffefefe)),
                     borderRadius: BorderRadius.circular(20),
                   ),

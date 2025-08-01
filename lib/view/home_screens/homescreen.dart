@@ -45,24 +45,43 @@ class _HomescreenState extends State<Homescreen> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset('lib/assets/botmbarhome_icon.png'),
+            icon: Image.asset(Appicons.botomBar_home_icon),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset('lib/assets/botmbar_icon2.png'),
+            icon: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LetsClockInScreen()));
+                },
+                child: Image.asset(Appicons.botom_bar_icon2)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
-          BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon3.png'),
+          BottomNavigationBarItem(
+            icon: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ChallangeAwaitingScreen()));  
+                },
+                child: Image.asset(Appicons.botom_bar_icon3)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
-          BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon4.png'),
+          BottomNavigationBarItem(
+            icon: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                },
+                child: Image.asset(Appicons.botom_bar_icon4)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
-          BottomNavigationBarItem(icon: Image.asset('lib/assets/botombar_icon5.png'),
+          BottomNavigationBarItem(
+            icon: InkWell(
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryReview()));
+                },
+                child: Image.asset(Appicons.botom_bar_icon5)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),

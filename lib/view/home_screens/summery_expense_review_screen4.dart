@@ -5,6 +5,8 @@ import 'package:management/controller/Widgets/text_Button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
+import 'package:management/view/home_screens/expense_summery_rejected.dart';
 
 class SummeryExpenseReviewScreen4 extends StatefulWidget {
   const SummeryExpenseReviewScreen4({super.key});
@@ -226,47 +228,63 @@ class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen
                 children: [
                 TextButon
                   (child:
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text('Review',style: GoogleFonts.inter(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w500,
-                      color: Appcolors.white_color,
-                    ),),
+                InkWell(
+                  onTap: (){
 
-                    CircleAvatar(
-                      backgroundColor: Appcolors.orang_light,
-                      radius: 9,
-                      child: Center(
-                        child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
-                      ),
-                    )
-                    // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
-                  ],
-                ),
-                ),
-                  Row(
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                  },
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('Approved',style: GoogleFonts.inter(
+                      Text('Review',style: GoogleFonts.inter(
                         fontSize: 12,
                         fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
+                        color: Appcolors.white_color,
                       ),),
-                      SizedBox(width: 2,),
-                      Image.asset('lib/assets/circle_numeric3_icon.png'),
+
+                      CircleAvatar(
+                        backgroundColor: Appcolors.orang_light,
+                        radius: 9,
+                        child: Center(
+                          child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
+                        ),
+                      )
+                      // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
                     ],
                   ),
-                  Row(
-                    children: [
-                      Text('Rejected',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
-                      ),),
-                      SizedBox(width: 2,),
-                      Image.asset('lib/assets/circle_numeric2_icon.png'),
-                    ],
+                ),
+                ),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
+                    },
+                    child: Row(
+                      children: [
+                        Text('Approved',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                        SizedBox(width: 2,),
+                        Image.asset('lib/assets/circle_numeric3_icon.png'),
+                      ],
+                    ),
+                  ),
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
+                    },
+                    child: Row(
+                      children: [
+                        Text('Rejected',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                        SizedBox(width: 2,),
+                        Image.asset('lib/assets/circle_numeric2_icon.png'),
+                      ],
+                    ),
                   ),
                 ],
               ),

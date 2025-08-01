@@ -9,14 +9,14 @@ import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 
-class SigninScreen1 extends StatefulWidget {
-  const SigninScreen1({super.key});
+class SigninEmailScreen1 extends StatefulWidget {
+  const SigninEmailScreen1({super.key});
 
   @override
-  State<SigninScreen1> createState() => _SigninScreen1State();
+  State<SigninEmailScreen1> createState() => _SigninEmailScreen1State();
 }
 
-class _SigninScreen1State extends State<SigninScreen1> {
+class _SigninEmailScreen1State extends State<SigninEmailScreen1> {
    bool  ischecked=false;
   @override
   Widget build(BuildContext context) {
@@ -27,16 +27,15 @@ class _SigninScreen1State extends State<SigninScreen1> {
          
           Positioned.fill(child: Image.asset(Appimages.signin_background,fit: BoxFit.cover,)),
 
-          SingleChildScrollView(
+           SingleChildScrollView(
              child: Column(
               children: [
-                SizedBox(height: 200,),
+               // SizedBox(height: 100,),
                 Container(
                   width: MediaQuery.of(context).size.width*1,
                   height: 616,
                   decoration: BoxDecoration(
-                    color: Color(0xfffefefe),
-                    border: Border.all(color: Color(0xfffefefe)),
+                    color: Appcolors.low_white,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child:

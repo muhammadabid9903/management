@@ -45,4 +45,9 @@ class Appicons{
      static const payroll_icon ='lib/assets/payroll_icon.png';
      static const forgetpassword_mainIcon='lib/assets/forget_password_main_icon.png';
      static const forgetpassword_mainIcon2='lib/assets/forgetPassword_mainIcon.png';
+     static const botomBar_home_icon ='lib/assets/botmbarhome_icon.png';
+     static const botom_bar_icon2='lib/assets/botmbar_icon2.png';
+     static const botom_bar_icon3='lib/assets/botombar_icon3.png';
+     static const botom_bar_icon4='lib/assets/botombar_icon4.png';
+     static const botom_bar_icon5='lib/assets/botombar_icon5.png';
 }
