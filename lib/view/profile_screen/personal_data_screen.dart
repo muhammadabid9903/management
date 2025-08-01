@@ -32,7 +32,11 @@ class _PersonalDataScreenState extends State<PersonalDataScreen> {
                     // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       SizedBox(width: 10,),
-                      Image.asset(Appimages.backarrow),
+                      InkWell(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(Appimages.backarrow)),
                       SizedBox(width: 70,),
                       Text('Personal Data',style: GoogleFonts.inter(
                         fontWeight: FontWeight.w600,
@@ -58,7 +62,7 @@ class _PersonalDataScreenState extends State<PersonalDataScreen> {
                   Row(
                     children: [
                       SizedBox(width: 20,),
-                      Text('MyPersonal Data',style: GoogleFonts.inter(
+                      Text('My Personal Data',style: GoogleFonts.inter(
                         fontSize: 14,
                         fontWeight: FontWeight.w600,
                         color: Appcolors.black_color,

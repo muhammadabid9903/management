@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/profile_screen/assets_screen.dart';
+import 'package:management/view/profile_screen/change_password_screen1.dart';
 import 'package:management/view/profile_screen/payroll_tax_screen.dart';
 import 'package:management/view/profile_screen/personal_data_screen.dart';
 import 'package:management/view/signup_screens/work_profile_screen.dart';
@@ -134,22 +136,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
                            Row(
                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                              children: [
-                               InkWell(
-                                 onTap: (){
-                                   // Navigator.push(context, MaterialPageRoute(builder: (context)=>WorkProfileScreen()));
-                                 },
-                                 child: Row(
-                                   children: [
-                                     SizedBox(width: 10,),
-                                     Image.asset(Appicons.location_icon),
-                                     SizedBox(width: 10,),
-                                     Text('Taman Anggrek',style: GoogleFonts.inter(
-                                       fontSize: 11,
-                                       fontWeight: FontWeight.w500,
-                                       color: Appcolors.onbsubtext,
-                                     ),)
-                                   ],
-                                 ),
+                               Row(
+                                 children: [
+                                   SizedBox(width: 10,),
+                                   Image.asset(Appicons.location_icon),
+                                   SizedBox(width: 10,),
+                                   Text('Taman Anggrek',style: GoogleFonts.inter(
+                                     fontSize: 11,
+                                     fontWeight: FontWeight.w500,
+                                     color: Appcolors.onbsubtext,
+                                   ),)
+                                 ],
                                ),
                                Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
                              ],
@@ -185,47 +182,47 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 children: [
                                   InkWell(
                                     onTap: (){
-                                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>WorkProfileScreen()));
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>PersonalDataScreen()));
                                     },
-                                    child: InkWell(
-                                      onTap: (){
-                                        Navigator.push(context, MaterialPageRoute(builder: (context)=>PersonalDataScreen()));
-                                      },
-                                      child: Row(
-                                        children: [
-                                          SizedBox(width: 10,),
-                                          Image.asset(Appicons.user_icon),
-                                          SizedBox(width: 10,),
-                                          Text('Personal Data',style: GoogleFonts.inter(
-                                            fontSize: 11,
-                                            fontWeight: FontWeight.w500,
-                                            color: Appcolors.onbsubtext,
-                                          ),)
-                                        ],
-                                      ),
+                                    child: Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Image.asset(Appicons.user_icon),
+                                        SizedBox(width: 10,),
+                                        Text('Personal Data',style: GoogleFonts.inter(
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.w500,
+                                          color: Appcolors.onbsubtext,
+                                        ),)
+                                      ],
                                     ),
                                   ),
                                   Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
                                 ],
                               ),
                               SizedBox(height: 10,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Row(
-                                    children: [
-                                      SizedBox(width: 10,),
-                                      Image.asset(Appicons.assets_icon),
-                                      SizedBox(width: 10,),
-                                      Text('Office Assets',style: GoogleFonts.inter(
-                                        fontSize: 11,
-                                        fontWeight: FontWeight.w500,
-                                        color: Appcolors.onbsubtext,
-                                      ),)
-                                    ],
-                                  ),
-                                  Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
-                                ],
+                              InkWell(
+                                onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>AssetsScreen()));
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Image.asset(Appicons.assets_icon),
+                                        SizedBox(width: 10,),
+                                        Text('Office Assets',style: GoogleFonts.inter(
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.w500,
+                                          color: Appcolors.onbsubtext,
+                                        ),)
+                                      ],
+                                    ),
+                                    Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
+                                  ],
+                                ),
                               ),
                               SizedBox(height: 10,),
                               InkWell(
@@ -297,23 +294,28 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           child: Column(
                             children: [
                               SizedBox(height: 20,),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Row(
-                                    children: [
-                                      SizedBox(width: 10,),
-                                      Image.asset(Appicons.settings_icon),
-                                      SizedBox(width: 10,),
-                                      Text('Change Password',style: GoogleFonts.inter(
-                                        fontSize: 11,
-                                        fontWeight: FontWeight.w500,
-                                        color: Appcolors.onbsubtext,
-                                      ),)
-                                    ],
-                                  ),
-                                  Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
-                                ],
+                              InkWell(
+                                onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ChangePasswordScreen1()));
+                                },
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        SizedBox(width: 10,),
+                                        Image.asset(Appicons.settings_icon),
+                                        SizedBox(width: 10,),
+                                        Text('Change Password',style: GoogleFonts.inter(
+                                          fontSize: 11,
+                                          fontWeight: FontWeight.w500,
+                                          color: Appcolors.onbsubtext,
+                                        ),)
+                                      ],
+                                    ),
+                                    Icon(Icons.arrow_forward_ios,color: Appcolors.gray_dark,),
+                                  ],
+                                ),
                               ),
                               SizedBox(height: 10,),
                               Row(

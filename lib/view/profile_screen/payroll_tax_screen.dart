@@ -31,7 +31,11 @@ class _PayrollTaxScreenState extends State<PayrollTaxScreen> {
                   Row(
                     children: [
                       SizedBox(width: 20,),
-                      Image.asset(Appimages.backarrow),
+                      InkWell(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(Appimages.backarrow)),
                       SizedBox(width: 70,),
                       Text('Payroll and Tex',style: GoogleFonts.inter(
                         fontSize: 18,

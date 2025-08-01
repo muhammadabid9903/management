@@ -144,7 +144,6 @@ class _SigninphoneOtpScreenState extends State<SigninphoneOtpScreen> {
                                               )
                                             ),
                                           ),
-
                                         ),
                                         Container(
                                           height: 50,

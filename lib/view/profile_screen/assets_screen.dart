@@ -29,7 +29,11 @@ class _AssetsScreenState extends State<AssetsScreen> {
                   Row(
                     children: [
                       SizedBox(width: 20,),
-                      Image.asset(Appimages.backarrow),
+                      InkWell(
+                          onTap: (){
+                            Navigator.pop(context);
+                          },
+                          child: Image.asset(Appimages.backarrow)),
                       SizedBox(width: 70,),
                       Text('Office Assets',style: GoogleFonts.inter(
                         fontSize: 18,

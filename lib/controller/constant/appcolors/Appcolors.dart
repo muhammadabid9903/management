@@ -37,4 +37,5 @@ class Appcolors{
   static Color orang_light =Color(0xfff95555);
   static Color choklet =Color(0xff2d2d2d);
   static Color gray_dark = Color(0xffB6C2D7);
+  static Color blackk = Color(0xff030407);
 }

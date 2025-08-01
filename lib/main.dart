@@ -9,8 +9,12 @@ import 'package:management/view/home_screens/leave_summery_rejected.dart';
 import 'package:management/view/home_screens/leave_summery_review.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
+import 'package:management/view/profile_screen/change_password_screen1.dart';
+import 'package:management/view/profile_screen/change_password_screen2.dart';
 import 'package:management/view/profile_screen/assets_screen.dart';
+import 'package:management/view/profile_screen/forget_password_screen.dart';
 import 'package:management/view/profile_screen/payroll_and_tax_screen2.dart';
+import 'package:management/view/profile_screen/payroll_and_tex_screen3.dart';
 import 'package:management/view/profile_screen/payroll_tax_screen.dart';
 import 'package:management/view/profile_screen/personal_data_screen.dart';
 import 'package:management/view/profile_screen/profile_screen.dart';
@@ -69,7 +73,7 @@ class MyApp extends StatelessWidget {
       //   home: SigninphoneScreen2(),
       //  home: SinginStartScreen(),
       //    home: SignupProfileScreen(),
-      //  home: ProfileScreen(),
+        home: ProfileScreen(),
       //  SigninemailScreen(),
       //  home: SigninemployeeidScreen(),
       //  home: SignUp1(),
@@ -90,7 +94,11 @@ class MyApp extends StatelessWidget {
       //   home: UpdateProfileScreeen2(),
       //  home: AssetsScreen(),
       //   home: PayrollTaxScreen(),
-        home: PayrollAndTaxScreen2(),
+      //   home: PayrollAndTaxScreen2(),
+      //     home: ChangePasswordScreen1(),
+      //   home: ChangePasswordScreen2(),
+      //   home: ForgetPasswordScreen(),
+        // home: PayrollAndTexScreen3(),
     );
   }
 }

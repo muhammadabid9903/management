@@ -42,4 +42,7 @@ class Appicons{
      static const assetsbrand_icon ='lib/assets/assestbrand_icon.png';
      static const setting_icon2 = 'libs/assets/setting_icon3.png';
      static const buying_icon = 'lib/assets/buying_icon.png';
+     static const payroll_icon ='lib/assets/payroll_icon.png';
+     static const forgetpassword_mainIcon='lib/assets/forget_password_main_icon.png';
+     static const forgetpassword_mainIcon2='lib/assets/forgetPassword_mainIcon.png';
 }
