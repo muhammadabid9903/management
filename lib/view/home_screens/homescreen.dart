@@ -3,6 +3,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/home_screens/challange_awaiting_screen.dart';
+import 'package:management/view/home_screens/leave_summery_approved.dart';
+import 'package:management/view/home_screens/leave_summery_review.dart';
+import 'package:management/view/home_screens/lets_clock_in_screen.dart';
+import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -14,6 +19,16 @@ class Homescreen extends StatefulWidget {
 class _HomescreenState extends State<Homescreen> {
 
   int selectedIndex=0;
+
+  final List<Widget> pages=[
+
+    // Homescreen(),
+    LetsClockInScreen(),
+    ChallangeAwaitingScreen(),
+    SummeryExpenseReviewScreen4(),
+    LeaveSummeryReview(),
+
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,7 +49,8 @@ class _HomescreenState extends State<Homescreen> {
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
-          BottomNavigationBarItem(icon: Image.asset('lib/assets/botmbar_icon2.png'),
+          BottomNavigationBarItem(
+            icon: Image.asset('lib/assets/botmbar_icon2.png'),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
@@ -554,3 +570,7 @@ class _HomescreenState extends State<Homescreen> {
     // )
   }
 }
+
+
+
+
