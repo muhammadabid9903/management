@@ -23,7 +23,7 @@ import 'package:management/view/profile_screen/update_profile_screen2.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
-import 'package:management/view/signIn_screens/signin_screen1.dart';
+import 'package:management/view/signIn_screens/signin_email_screen1.dart';
 import 'package:management/view/signIn_screens/signin_screen2.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signin_screen5.dart';
@@ -57,24 +57,25 @@ class MyApp extends StatelessWidget {
       ),
 
 
-      // home: SigninScreen1(),
-      //  home: SigninScreen2(),
-      //  home: SigninScreen3(),
-           home: Homescreen(),
-      //  home: SigninScreen5(),
-      //  home: SigninScreen6(),
+          // home: SigninEmailScreen1(),
+         // home: SigninScreen2(),
+      //      home: Homescreen(),
+      //   home: SigninScreen5(),
+      //    home: SigninScreen6(),
       //  home: SigninScreen1(),
       //  home: SigninScreen2(),
-      //   home: SigninScreen3(),
       //  home: WorkProfileScreen(),
       //  home: SigninScreen5(),
       //   home: SigninScreen6(),
-      //   home: SigninphoneScreen1(),
-      //   home: SigninphoneScreen2(),
+      //    home: SigninphoneScreen1(),
+      //   home: SigninphonemainScreen(),
+      //    home: SigninphoneOtpScreen(),
+
+      //    home: SigninphoneScreen2(),
       //  home: SinginStartScreen(),
       //    home: SignupProfileScreen(),
       //   home: ProfileScreen(),
-      //  SigninemailScreen(),
+         home:  SigninemailScreen(),
       //  home: SigninemployeeidScreen(),
       //  home: SignUp1(),
       //  home: SignUp1(),
