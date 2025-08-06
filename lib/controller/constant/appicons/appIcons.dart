@@ -50,4 +50,5 @@ class Appicons{
      static const botom_bar_icon3='lib/assets/botombar_icon3.png';
      static const botom_bar_icon4='lib/assets/botombar_icon4.png';
      static const botom_bar_icon5='lib/assets/botombar_icon5.png';
+     static const BotomBar_icon_1 ='lib/assets/bottombar_icon_1.png';
 }

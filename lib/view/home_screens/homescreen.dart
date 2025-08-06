@@ -22,11 +22,11 @@ class _HomescreenState extends State<Homescreen> {
 
   final List<Widget> pages=[
 
-    // Homescreen(),
-    LetsClockInScreen(),
-    ChallangeAwaitingScreen(),
-    SummeryExpenseReviewScreen4(),
-    LeaveSummeryReview(),
+    const Homescreen(),
+    const LetsClockInScreen(),
+    const ChallangeAwaitingScreen(),
+    const SummeryExpenseReviewScreen4(),
+    const LeaveSummeryReview(),
 
   ];
   @override
@@ -38,6 +38,7 @@ class _HomescreenState extends State<Homescreen> {
         unselectedItemColor: Appcolors.white_color,
         selectedItemColor: Colors.black12,
         currentIndex: selectedIndex,
+        // type: BottomNavigationBarType.fixed,
         onTap: (index){
           setState(() {
             selectedIndex=index;
@@ -45,43 +46,28 @@ class _HomescreenState extends State<Homescreen> {
         },
         items: [
           BottomNavigationBarItem(
-            icon: Image.asset(Appicons.botomBar_home_icon),
+            icon: Image.asset(Appicons.BotomBar_icon_1),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LetsClockInScreen()));
-                },
-                child: Image.asset(Appicons.botom_bar_icon2)),
+            icon: Image.asset(Appicons.botom_bar_icon2),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ChallangeAwaitingScreen()));  
-                },
-                child: Image.asset(Appicons.botom_bar_icon3)),
+            icon: Image.asset(Appicons.botom_bar_icon3),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
-                },
-                child: Image.asset(Appicons.botom_bar_icon4)),
+
+            icon: Image.asset(Appicons.botom_bar_icon4),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: InkWell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryReview()));
-                },
-                child: Image.asset(Appicons.botom_bar_icon5)),
+            icon: Image.asset(Appicons.botom_bar_icon5),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
