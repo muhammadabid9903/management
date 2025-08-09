@@ -9,6 +9,7 @@ import 'package:management/view/home_screens/leave_summery_rejected.dart';
 import 'package:management/view/home_screens/leave_summery_review.dart';
 import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
+import 'package:management/view/mesages_screens/member_1_chat.dart';
 import 'package:management/view/mesages_screens/messages.dart';
 import 'package:management/view/profile_screen/change_password_screen1.dart';
 import 'package:management/view/profile_screen/change_password_screen2.dart';
@@ -100,7 +101,8 @@ class MyApp extends StatelessWidget {
       //   home: ChangePasswordScreen2(),
       //   home: ForgetPasswordScreen(),
         // home: PayrollAndTexScreen3(),
-      home: Messages(),
+      // home: Messages(),
+      home: Member1Chat(),
     );
   }
 }
