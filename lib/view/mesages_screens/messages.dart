@@ -59,8 +59,9 @@ chatmember(mainText: 'Jason', subText: 'Ey Tonald let,s do the desighn sprint at
             ),
           ),
           Expanded(
-            child: ListView.builder(
+            child: ListView.separated(
                 itemCount: Member.length,
+                separatorBuilder: (context,index)=>Divider(color: Appcolors.DividerColor,),
                 itemBuilder:(context,index){
                   return ListTile(
                     leading: CircleAvatar(
@@ -80,12 +81,15 @@ chatmember(mainText: 'Jason', subText: 'Ey Tonald let,s do the desighn sprint at
                         color: Appcolors. onbsubtext,
                       ),
                     ),
-                    trailing: Text(Member[index].trailing.toString()),
+                    trailing: Text(Member[index].trailing.toString()
+                    ),
                   );
+
+
                 },
             ),
           ),
-          SizedBox(height: 40,),
+          SizedBox(height: 20,),
         ],
       ),
     );

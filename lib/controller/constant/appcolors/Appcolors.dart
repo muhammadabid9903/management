@@ -38,4 +38,5 @@ class Appcolors{
   static Color choklet =Color(0xff2d2d2d);
   static Color gray_dark = Color(0xffB6C2D7);
   static Color blackk = Color(0xff030407);
+  static Color DividerColor =Color(0xffcaecf0);
 }
