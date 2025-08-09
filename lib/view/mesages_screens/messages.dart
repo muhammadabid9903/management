@@ -37,6 +37,7 @@ chatmember(mainText: 'Jason', subText: 'Ey Tonald let,s do the desighn sprint at
         children: [
           Container(
             height: 100,
+            width: MediaQuery.of(context).size.width*1,
             color: Appcolors.white_color,
             child: Column(
               children: [
@@ -53,25 +54,38 @@ chatmember(mainText: 'Jason', subText: 'Ey Tonald let,s do the desighn sprint at
                     ),)
                   ],
                 ),
-            ListView.builder(
-             itemCount: Member.length,
-            itemBuilder:(context,index){
-               return Container(
-                 child: ListTile(
-                   leading: CircleAvatar(
-                     // child: Appimages(),
-                   ),
-                   title: Text(Member[index].mainText.toString()),
-                   subtitle: Text(Member[index].subText.toString()),
-                   trailing: Text(Member[index].trailing.toString()),
-                 ),
-               );
 
-            }
-            )
               ],
             ),
           ),
+          Expanded(
+            child: ListView.builder(
+                itemCount: Member.length,
+                itemBuilder:(context,index){
+                  return ListTile(
+                    leading: CircleAvatar(
+                      backgroundImage: AssetImage(Member[index].AppImage),
+                      // child: Appimages(),
+                    ),
+                    title: Text(Member[index].mainText.toString(),style: GoogleFonts.inter(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Appcolors. onbmaintext,
+                    ),
+                    ),
+                    subtitle: Text(Member[index].subText.toString(),
+                      style: GoogleFonts.inter(
+                        fontSize: 12,
+                        fontWeight: FontWeight.w400,
+                        color: Appcolors. onbsubtext,
+                      ),
+                    ),
+                    trailing: Text(Member[index].trailing.toString()),
+                  );
+                },
+            ),
+          ),
+          SizedBox(height: 40,),
         ],
       ),
     );
