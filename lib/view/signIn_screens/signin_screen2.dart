@@ -5,6 +5,8 @@ import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
 
+import '../Forgot_password/Forgot2_view.dart';
+
 class SigninScreen2 extends StatefulWidget {
   const SigninScreen2({super.key});
 
@@ -143,11 +145,16 @@ class _SigninScreen2State extends State<SigninScreen2> {
                                     color: Colors.black87,
                                   ),),
                                   SizedBox(width: 40,),
-                                  Text('Forgot Password',style: GoogleFonts.poppins(
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w400,
-                                    color: Color(0xff7a5af8),
-                                  ),)
+                                  TextButton(
+                                    onPressed: (){
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=>Forgot2View()));
+                                    },
+                                    child: Text('Forgot Password',style: GoogleFonts.poppins(
+                                      fontSize: 11,
+                                      fontWeight: FontWeight.w400,
+                                      color: Color(0xff7a5af8),
+                                    ),),
+                                  )
                                 ],
                               ),
                               SizedBox(height: 30,),

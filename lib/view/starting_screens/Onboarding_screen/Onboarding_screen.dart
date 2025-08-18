@@ -18,7 +18,8 @@ class _MyOnb1State extends State<MyOnb1> {
   int currentindex=0;
   nextPage() {
     if (currentindex < 3) {
-      pageController.animateToPage(currentindex++,
+      pageController.animateToPage(
+          currentindex++,
           duration: Duration(milliseconds: 100), curve: Curves.bounceIn);
     }
   }
@@ -50,7 +51,12 @@ class _MyOnb1State extends State<MyOnb1> {
                   )
               ),// list generate---------------------------------------
               SizedBox(height: 30,),
-              MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,),
+              InkWell(
+                  onTap: (){
+                    nextPage();
+                    print('-------------1');
+                  },
+                  child: MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,)),
               SizedBox(height: 15,),
               Skipbutton(text: 'Skip', fontsize: 14, color:Color(0xff5B2ED4), )
             ],

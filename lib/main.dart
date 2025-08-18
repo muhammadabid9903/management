@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:management/view/Forgot_password/Forgot1_screen.dart';
+import 'package:management/view/Forgot_password/Forgot2_view.dart';
 import 'package:management/view/home_screens/challange_awaiting_screen.dart';
 import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
 import 'package:management/view/home_screens/expense_summery_rejected.dart';
@@ -102,7 +103,7 @@ class MyApp extends StatelessWidget {
       //   home: ForgetPasswordScreen(),
         // home: PayrollAndTexScreen3(),
       // home: Messages(),
-      home: Member1Chat(),
+      home: SigninScreen2(),
     );
   }
 }
