@@ -73,9 +73,7 @@ class MyApp extends StatelessWidget {
              GetPage(name: '/SignIn_otp', page: ()=>SigninphoneOtpScreen()),
              GetPage(name: '/Onboarding-screen', page: ()=>MyOnb1()),
              GetPage(name: '/Sign-in', page: ()=>SigninEmailScreen1()),
-
-
-             // GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
+             // GetPage(name: '/', page: ()=>LetsClockInScreen()),
 
              // GetPage(name: 'Lets-clock-in-screen', page: ()=>L()),
              // GetPage(name: 'Lets-clock-in-screen', page: ()=>LetsClockInScreen()),

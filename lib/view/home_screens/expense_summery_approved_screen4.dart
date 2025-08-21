@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/text_Button.dart';
@@ -224,16 +225,19 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  TextButon
-                    (child:
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Text('Review',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.white_color,
-                      ),),
+                      InkWell(
+                         onTap:(){
+                         Get.toNamed('Home-4.1');
+                        },
+                        child: Text('Review',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.white_color,
+                        ),),
+                      ),
 
                       CircleAvatar(
                         backgroundColor: Appcolors.orang_light,
@@ -245,25 +249,34 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
                       // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
                     ],
                   ),
-                  ),
                   Row(
                     children: [
-                      Text('Approved',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
-                      ),),
+                      InkWell(
+                        onTap: (){
+                          Get.toNamed('Home-4.2');
+                        },
+                        child: Text('Approved',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                      ),
                       SizedBox(width: 2,),
                       Image.asset('lib/assets/circle_numeric3_icon.png'),
                     ],
                   ),
                   Row(
                     children: [
-                      Text('Rejected',style: GoogleFonts.inter(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
-                        color: Appcolors.onbsubtext,
-                      ),),
+                      InkWell(
+                        onTap: (){
+                          Get.toNamed('Home-4.3');
+                        },
+                        child: Text('Rejected',style: GoogleFonts.inter(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Appcolors.onbsubtext,
+                        ),),
+                      ),
                       SizedBox(width: 2,),
                       Image.asset('lib/assets/circle_numeric2_icon.png'),
                     ],

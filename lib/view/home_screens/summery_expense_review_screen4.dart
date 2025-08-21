@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/text_Button.dart';
@@ -230,8 +231,8 @@ class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen
                   (child:
                 InkWell(
                   onTap: (){
-
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                    Get.toNamed('Home-4.1');
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
                   },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -256,7 +257,10 @@ class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen
                 ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
+
+                      Get.toNamed('Home-4.2');
+
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
                     },
                     child: Row(
                       children: [
@@ -272,7 +276,10 @@ class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
+
+                      Get.toNamed('Home-4.3');
+
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
                     },
                     child: Row(
                       children: [

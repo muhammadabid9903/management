@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
@@ -51,18 +52,30 @@ class _HomescreenState extends State<Homescreen> {
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset(Appicons.botom_bar_icon2),
+            icon: InkWell(
+                onTap: (){
+                  Get.toNamed('Home-2');
+                },
+                child: Image.asset(Appicons.botom_bar_icon2)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
-            icon: Image.asset(Appicons.botom_bar_icon3),
+            icon: InkWell(
+                onTap: (){
+                  Get.toNamed('Home-3');
+                },
+                child: Image.asset(Appicons.botom_bar_icon3)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
           BottomNavigationBarItem(
 
-            icon: Image.asset(Appicons.botom_bar_icon4),
+            icon: InkWell(
+              onTap: (){
+                Get.toNamed('Home-4.1');
+              },
+                child: Image.asset(Appicons.botom_bar_icon4)),
             backgroundColor: Appcolors.black_color,
             label: '',
           ),
