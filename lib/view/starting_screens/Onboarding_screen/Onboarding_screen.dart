@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/view/signIn_screens/signin_email_screen1.dart';
 
@@ -53,7 +54,9 @@ class _MyOnb1State extends State<MyOnb1> {
               SizedBox(height: 30,),
               InkWell(
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninEmailScreen1()));
+                   Get.offAndToNamed('Sign-in');
+
+                    // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninEmailScreen1()));
                   },
                   child: MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,)),
               SizedBox(height: 15,),

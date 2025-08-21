@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
     //   //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
     //   //   useMaterial3: true,
 
-            // initialRoute: '/Home-2',
+             initialRoute: '/Onboarding-screen',
            getPages:[
              GetPage(name: '/Home-Screen-main', page: ()=>Homescreen()),
              GetPage(name: '/Home-2', page: ()=>LetsClockInScreen()),
@@ -71,6 +71,10 @@ class MyApp extends StatelessWidget {
              GetPage(name: '/Home-5.2', page: ()=>LeaveSummeryApproved()),
              GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
              GetPage(name: '/SignIn_otp', page: ()=>SigninphoneOtpScreen()),
+             GetPage(name: '/Onboarding-screen', page: ()=>MyOnb1()),
+             GetPage(name: '/Sign-in', page: ()=>SigninEmailScreen1()),
+
+
              // GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
 
              // GetPage(name: 'Lets-clock-in-screen', page: ()=>L()),
@@ -129,8 +133,8 @@ class MyApp extends StatelessWidget {
     //     home: MyOnb1(),
 
 
-                home: SignUp1(),
-    //        home: Signup2(),
+                // home: SignUp1(),
+           home: Signup2(),
 
 
 

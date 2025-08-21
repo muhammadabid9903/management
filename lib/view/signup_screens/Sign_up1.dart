@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/Passwordtextfield.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
@@ -53,6 +54,29 @@ class _SignUp1State extends State<SignUp1> {
             Padding(
               padding: const EdgeInsets.only(left: 20),
               child: Mytextwidget(fontcolor: Colors.black, fontsize:12, text: 'Phone Number',fontWeight: FontWeight.w500,),
+            ),
+            Container(
+              height: 47,
+              width: MediaQuery.of(context).size.width*0.85,
+              decoration: BoxDecoration(
+                border: Border.all(
+                  color: Colors.black26,
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child:
+              TextFormField(
+                decoration: InputDecoration(
+                    border: InputBorder.none,
+                    prefixIcon: Image.asset(Appicons.id_icon),
+                    hintText: 'My Employee Id',
+                    hintStyle: GoogleFonts.poppins(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black54,
+                    )
+                ),
+              ),
             ),
             SizedBox(height: 5,),
             Align(

@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
@@ -299,7 +300,8 @@ class _SigninphoneOtpScreenState extends State<SigninphoneOtpScreen> {
                                     SizedBox(height: 30,),
                                     InkWell(
                                         onTap: (){
-                                          Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+                                         Get.offAndToNamed('Home-Screen-main');
+                                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                                         },
                                         child: MainButton(color: Appcolors.white_color, fontsize: 13, text: 'Submit',)),
                                     SizedBox(height: 10,),
