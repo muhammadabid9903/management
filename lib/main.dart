@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:management/view/Forgot_password/Forgot1_screen.dart';
 import 'package:management/view/home_screens/challange_awaiting_screen.dart';
 import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
@@ -50,60 +51,91 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return
+      GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+    //   // title: 'Flutter Demo',
+    //   // theme: ThemeData(
+    //   //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+    //   //   useMaterial3: true,
+
+            // initialRoute: '/Home-2',
+           getPages:[
+             GetPage(name: '/Home-Screen-main', page: ()=>Homescreen()),
+             GetPage(name: '/Home-2', page: ()=>LetsClockInScreen()),
+             GetPage(name: '/Home-3', page: ()=>ChallangeAwaitingScreen()),
+             GetPage(name: '/Home-4.1', page: ()=>SummeryExpenseReviewScreen4()),
+             GetPage(name: '/Home-4.2', page: ()=>ExpenseSummeryApprovedScreen4()),
+             GetPage(name: '/Home-4.3', page: ()=>ExpenseSummeryRejected()),
+             GetPage(name: '/Home-5.1', page: ()=>LeaveSummeryReview()),
+             GetPage(name: '/Home-5.2', page: ()=>LeaveSummeryApproved()),
+             GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
+             GetPage(name: '/SignIn_otp', page: ()=>SigninphoneOtpScreen()),
+             // GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
+
+             // GetPage(name: 'Lets-clock-in-screen', page: ()=>L()),
+             // GetPage(name: 'Lets-clock-in-screen', page: ()=>LetsClockInScreen()),
+             // GetPage(name: 'Lets-clock-in-screen', page: ()=>LetsClockInScreen()),
+             ],
+
+    //        // home: SigninEmailScreen1(),
+    //      // home: SigninScreen2(),
+    //   //      home: Homescreen(),
+    //   //   home: SigninScreen5(),
+    //   //    home: SigninScreen6(),
+    //   //  home: SigninScreen1(),
+    //   //  home: SigninScreen2(),
+    //   //  home: WorkProfileScreen(),
+    //   //  home: SigninScreen5(),
+    //   //   home: SigninScreen6(),
+    //   //    home: SigninphoneScreen1(),
+    //   //   home: SigninphonemainScreen(),
+    //   //    home: SigninphoneOtpScreen(),
+    //   //    home: SigninphoneScreen2(),
+    //   //  home: SinginStartScreen(),
+    //   //    home: SignupProfileScreen(),
+    //   //   home: ProfileScreen(),
+    //   //    home:  SigninemailScreen(),
+    //   //  home: SigninemployeeidScreen(),
+    //   //  home: SignUp1(),
+    //   //  home: SignUp1(),
+    //   //  home: WorkProfileScreen(),
+    //   //  home: SigninphoneOtpScreen(),
+    //   //  home: LetsClockInScreen(),
+    //   //  home: ChallangeAwaitingScreen(),
+    //   //    home: SummeryExpenseReviewScreen4(),
+    //   //    home: ExpenseSummeryApprovedScreen4(),
+    //   //    home: ExpenseSummeryRejected(),
+    //   //     home: LeaveSummeryReview(),
+    //   //    home: LeaveSummeryApproved(),
+    //   //    home: LeaveSummeryRejected(),
+    //   //   home: Signup2(),
+    //   //  home: PersonalDataScreen(),
+    //   //   home: UpdateProfileScreeen1(),
+    //   //   home: UpdateProfileScreeen2(),
+    //   //    home: AssetsScreen(),
+    //   //   home: PayrollTaxScreen(),
+    //   //   home: PayrollAndTaxScreen2(),
+    //   //     home: ChangePasswordScreen1(),
+    //   //   home: ChangePasswordScreen2(),
+    //   //   home: ForgetPasswordScreen(),
+    //        home: PayrollAndTexScreen3(),
+    //           home: Messages(),
+    //        home: Member1Chat(),
+    //        home: Homescreen(),
+    //         home: WorkProfileScreen(),
+    //            home: WorkProfileScreen1(),
+    //     home: MyProfUpdated(),
+        home: MyOnb1(),
 
 
-           // home: SigninEmailScreen1(),
-         // home: SigninScreen2(),
-      //      home: Homescreen(),
-      //   home: SigninScreen5(),
-      //    home: SigninScreen6(),
-      //  home: SigninScreen1(),
-      //  home: SigninScreen2(),
-      //  home: WorkProfileScreen(),
-      //  home: SigninScreen5(),
-      //   home: SigninScreen6(),
-      //    home: SigninphoneScreen1(),
-      //   home: SigninphonemainScreen(),
-      //    home: SigninphoneOtpScreen(),
-      //    home: SigninphoneScreen2(),
-      //  home: SinginStartScreen(),
-      //    home: SignupProfileScreen(),
-      //   home: ProfileScreen(),
-      //    home:  SigninemailScreen(),
-      //  home: SigninemployeeidScreen(),
-      //  home: SignUp1(),
-      //  home: SignUp1(),
-      //  home: WorkProfileScreen(),
-      //  home: SigninphoneOtpScreen(),
-      //  home: LetsClockInScreen(),
-      //  home: ChallangeAwaitingScreen(),
-      //    home: SummeryExpenseReviewScreen4(),
-      //    home: ExpenseSummeryApprovedScreen4(),
-      //    home: ExpenseSummeryRejected(),
-      //     home: LeaveSummeryReview(),
-      //    home: LeaveSummeryApproved(),
-      //    home: LeaveSummeryRejected(),
-      //   home: Signup2(),
-      //  home: PersonalDataScreen(),
-      //   home: UpdateProfileScreeen1(),
-      //   home: UpdateProfileScreeen2(),
-      //    home: AssetsScreen(),
-      //   home: PayrollTaxScreen(),
-      //   home: PayrollAndTaxScreen2(),
-      //     home: ChangePasswordScreen1(),
-      //   home: ChangePasswordScreen2(),
-      //   home: ForgetPasswordScreen(),
-        // home: PayrollAndTexScreen3(),
-      // home: Messages(),
-      home: Member1Chat(),
-    );
+        //        home: SignUp1(),
+    //        home: Signup2(),
+
+
+
+
+     );
   }
 }
 

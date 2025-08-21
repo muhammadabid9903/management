@@ -8,6 +8,7 @@ import 'package:management/controller/Widgets/Textwidget.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';
+import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
 
 class Signup2 extends StatefulWidget {
   const Signup2({super.key});
@@ -691,7 +692,9 @@ class _Signup2State extends State<Signup2> {
                 fontWeight: FontWeight.bold,
               ),
               TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneOtpScreen()));
+                  },
                   style: TextButton.styleFrom(
                       padding: EdgeInsets.zero, minimumSize: Size(0, 0)),
                   child: Mytextwidget(
@@ -710,3 +713,7 @@ class _Signup2State extends State<Signup2> {
     );
   }
 }
+
+
+
+

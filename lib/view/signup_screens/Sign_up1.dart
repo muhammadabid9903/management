@@ -3,7 +3,7 @@ import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/Passwordtextfield.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/Textfield_widget.dart';
-import 'package:management/controller/Widgets/Textwidget.dart';
+          import 'package:management/controller/Widgets/Textwidget.dart';
 import 'package:management/controller/constant/appImages/appImages.dart';
 import 'package:management/controller/constant/appcolors/Appcolors.dart';
 import 'package:management/controller/constant/appicons/appIcons.dart';

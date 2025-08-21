@@ -144,7 +144,7 @@ class _Member1ChatState extends State<Member1Chat> {
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
                           color: Appcolors.white_color,
-                        ),)
+                        ),),
                       ],
                     )
 

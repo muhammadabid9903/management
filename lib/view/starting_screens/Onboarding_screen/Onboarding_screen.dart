@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:management/view/signIn_screens/signin_email_screen1.dart';
 
 import '../../../controller/Widgets/mian_button.dart';
 import '../../../controller/Widgets/skip_button.dart';
@@ -50,7 +51,11 @@ class _MyOnb1State extends State<MyOnb1> {
                   )
               ),// list generate---------------------------------------
               SizedBox(height: 30,),
-              MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,),
+              InkWell(
+                  onTap: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninEmailScreen1()));
+                  },
+                  child: MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,)),
               SizedBox(height: 15,),
               Skipbutton(text: 'Skip', fontsize: 14, color:Color(0xff5B2ED4), )
             ],
