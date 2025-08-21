@@ -108,7 +108,8 @@ class _MyOnb1State extends State<MyOnb1> {
 
                             Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Welcome to Workmate!',fontWeight: FontWeight.bold,),
                             SizedBox(height: 5,),
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Make Smart Decisions! Set clear timelines for\n'
+                            Mytextwidget(
+                              fontcolor: Colors.black, fontsize: 12, text: 'Make Smart Decisions! Set clear timelines for\n'
                                 '  projects and celebrate your achievements!',fontWeight: FontWeight.normal,),
                           ],
                         ),

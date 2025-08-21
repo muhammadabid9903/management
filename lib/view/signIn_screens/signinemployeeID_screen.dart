@@ -9,6 +9,7 @@ import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
+import 'package:management/view/signup_screens/Signup_2.dart';
 
 class SigninemployeeidScreen extends StatefulWidget {
   const SigninemployeeidScreen({super.key});
@@ -235,6 +236,7 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                               ),),
                               InkWell(
                                 onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup2()));
 
                                 },
                                 child: Text('Sign Up Here',style: GoogleFonts.poppins(

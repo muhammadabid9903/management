@@ -126,10 +126,10 @@ class MyApp extends StatelessWidget {
     //         home: WorkProfileScreen(),
     //            home: WorkProfileScreen1(),
     //     home: MyProfUpdated(),
-        home: MyOnb1(),
+    //     home: MyOnb1(),
 
 
-        //        home: SignUp1(),
+                home: SignUp1(),
     //        home: Signup2(),
 
 
