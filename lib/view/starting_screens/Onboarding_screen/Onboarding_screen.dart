@@ -20,7 +20,8 @@ class _MyOnb1State extends State<MyOnb1> {
   int currentindex=0;
   nextPage() {
     if (currentindex < 3) {
-      pageController.animateToPage(currentindex++,
+      pageController.animateToPage(
+          currentindex++,
           duration: Duration(milliseconds: 100), curve: Curves.bounceIn);
     }
   }
@@ -54,9 +55,14 @@ class _MyOnb1State extends State<MyOnb1> {
               SizedBox(height: 30,),
               InkWell(
                   onTap: (){
+<<<<<<< HEAD
                    Get.offAndToNamed('Sign-in');
 
                     // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninEmailScreen1()));
+=======
+                    nextPage();
+                    print('-------------1');
+>>>>>>> c9ca805a86aa454082815088edcd5388291db31a
                   },
                   child: MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,)),
               SizedBox(height: 15,),

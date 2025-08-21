@@ -18,9 +18,6 @@ class MainButton extends StatefulWidget {
 
 class _MainButtonState extends State<MainButton> {
   @override
-  PageController pageController=PageController();
-
-  int currentindex=0;
 
   Widget build(BuildContext context) {
     return Container(

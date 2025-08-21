@@ -225,29 +225,35 @@ class _ExpenseSummeryApprovedScreen4State extends State<ExpenseSummeryApprovedSc
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      InkWell(
-                         onTap:(){
-                         Get.toNamed('Home-4.1');
-                        },
-                        child: Text('Review',style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: Appcolors.white_color,
-                        ),),
-                      ),
+                  InkWell(
+                    onTap: (){
+                    Get.toNamed('Home-4.1');
 
-                      CircleAvatar(
-                        backgroundColor: Appcolors.orang_light,
-                        radius: 9,
-                        child: Center(
-                          child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
-                        ),
-                      )
-                      // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
-                    ],
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
+                    },
+                    child:
+                    TextButon(
+                      child:
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text('Review',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.white_color,
+                          ),),
+
+                          CircleAvatar(
+                            backgroundColor: Appcolors.orang_light,
+                            radius: 9,
+                            child: Center(
+                              child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
+                            ),
+                          )
+                          // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
+                        ],
+                      ),
+                    ),
                   ),
                   Row(
                     children: [

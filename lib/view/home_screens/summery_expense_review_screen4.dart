@@ -227,8 +227,8 @@ class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                TextButon
-                  (child:
+                TextButon(
+                  child:
                 InkWell(
                   onTap: (){
                     Get.toNamed('Home-4.1');
