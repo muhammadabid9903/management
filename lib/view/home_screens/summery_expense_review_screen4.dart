@@ -19,9 +19,9 @@ class SummeryExpenseReviewScreen4 extends StatefulWidget {
 class _SummeryExpenseReviewScreen4State extends State<SummeryExpenseReviewScreen4> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Appcolors.screens_background,
-      body: SingleChildScrollView(
+    return Container(
+      // backgroundColor: Appcolors.screens_background,
+      child: SingleChildScrollView(
         child:
         Column(
           children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/text_Button.dart';
@@ -18,8 +19,9 @@ class LeaveSummeryReview extends StatefulWidget {
 class _LeaveSummeryReviewState extends State<LeaveSummeryReview> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
+    return Container(
+      color: Appcolors.screens_background,
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Stack(
@@ -194,6 +196,7 @@ class _LeaveSummeryReviewState extends State<LeaveSummeryReview> {
                 children: [
                   InkWell(
                     onTap: (){
+                      Get.toNamed('Home-5.1');
                       // Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
                     },
                     child: TextButon
@@ -221,7 +224,8 @@ class _LeaveSummeryReviewState extends State<LeaveSummeryReview> {
                   ),
                   InkWell(
                     onTap: (){
-                       Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryApproved()));
+                      Get.toNamed('Home-5.2');
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryApproved()));
                     },
                     child: Row(
                       children: [
@@ -237,7 +241,8 @@ class _LeaveSummeryReviewState extends State<LeaveSummeryReview> {
                   ),
                   InkWell(
                     onTap: (){
-                       Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryRejected()));
+                      Get.toNamed('Home-5.3');
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryRejected()));
                     },
                     child: Row(
                       children: [

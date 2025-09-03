@@ -15,9 +15,9 @@ class ChallangeAwaitingScreen extends StatefulWidget {
 class _ChallangeAwaitingScreenState extends State<ChallangeAwaitingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xfff1f3f8),
-      body: SingleChildScrollView(
+    return Container(
+      color: Color(0xfff1f3f8),
+      child: SingleChildScrollView(
         child: Column(
           children: [
             Stack(

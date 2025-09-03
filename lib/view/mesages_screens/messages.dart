@@ -45,7 +45,11 @@ chatmember(mainText: 'Jason', subText: 'Ey Tonald let,s do the desighn sprint at
                 Row(
                   children: [
                     SizedBox(width: 20,),
-                    Image.asset(Appimages.backarrow),
+                    InkWell(
+                        onTap: (){
+                          Navigator.pop(context);
+                        },
+                        child: Image.asset(Appimages.backarrow)),
                     SizedBox(width: 70,),
                     Text('Messages',style: GoogleFonts.inter(
                       fontSize: 18,

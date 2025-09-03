@@ -160,8 +160,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 30,),
                           InkWell(
                               onTap: (){
-
-                               Get.offAndToNamed('Home-Screen-main');
+                                Get.toNamed('Bottom-bar');
+                               // Get.offAndToNamed('Home-Screen-main');
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                               },
                               child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
@@ -192,7 +192,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
+                             Get.toNamed('Signin-Emial');
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -210,7 +211,9 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
+
+                              Get.toNamed('Signin-Phone');
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
 
                             },
                             child: RowButton(child: Row(

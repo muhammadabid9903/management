@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/text_Button.dart';
@@ -196,7 +197,8 @@ class _LeaveSummeryRejectedState extends State<LeaveSummeryRejected> {
                     children: [
                       InkWell(
                         onTap: (){
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryReview()));
+                          Get.toNamed('Home-5.1');
+                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryReview()));
                         },
                         child: TextButon
                           (child:
@@ -223,7 +225,8 @@ class _LeaveSummeryRejectedState extends State<LeaveSummeryRejected> {
                       ),
                       InkWell(
                         onTap: (){
-                           Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryApproved()));
+                          Get.toNamed('Home-5.2');
+                          // Navigator.push(context, MaterialPageRoute(builder: (context)=>LeaveSummeryApproved()));
                         },
                         child: Row(
                           children: [
@@ -239,6 +242,7 @@ class _LeaveSummeryRejectedState extends State<LeaveSummeryRejected> {
                       ),
                       InkWell(
                         onTap: (){
+                          Get.toNamed('Home-5.1');
                           // Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
                         },
                         child: Row(
