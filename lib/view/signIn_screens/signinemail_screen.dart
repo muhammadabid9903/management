@@ -160,14 +160,11 @@ class _SigninemailScreenState extends State<SigninemailScreen> {
                           SizedBox(height: 30,),
                           InkWell(
                               onTap: (){
-                               Get.offAndToNamed('Home-Screen-main');
+                               Get.toNamed('Bottom-bar');
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                               },
                               child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
-
-
-
                           Row(
                             children: [
                               SizedBox(width: 40,),
@@ -194,7 +191,8 @@ class _SigninemailScreenState extends State<SigninemailScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
+                              Get.toNamed('Signin-EmployeId');
+                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -216,7 +214,8 @@ class _SigninemailScreenState extends State<SigninemailScreen> {
                             },
                             child: InkWell(
                               onTap: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
+                                Get.toNamed('Signin-Phone');
+                                // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
                               },
                               child: RowButton(child: Row(
                                 children: [

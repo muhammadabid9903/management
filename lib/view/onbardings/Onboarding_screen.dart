@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:management/view/signIn_screens/signin_email_screen1.dart';
+import 'package:management/view/test_screen/signin_email_screen1.dart';
 
 import '../../../controller/Widgets/mian_button.dart';
 import '../../../controller/Widgets/skip_button.dart';

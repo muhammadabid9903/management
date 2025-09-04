@@ -300,7 +300,7 @@ class _SigninphoneOtpScreenState extends State<SigninphoneOtpScreen> {
                                     SizedBox(height: 30,),
                                     InkWell(
                                         onTap: (){
-                                         Get.offAndToNamed('Home-Screen-main');
+                                         Get.toNamed('Bottom-bar');
                                           // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                                         },
                                         child: MainButton(color: Appcolors.white_color, fontsize: 13, text: 'Submit',)),

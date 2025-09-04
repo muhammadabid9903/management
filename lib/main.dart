@@ -30,11 +30,11 @@ import 'package:management/view/profile_screen/update_profile_screen2.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
-import 'package:management/view/signIn_screens/signin_email_screen1.dart';
-import 'package:management/view/signIn_screens/signin_screen2.dart';
+import 'package:management/view/test_screen/signin_email_screen1.dart';
+import 'package:management/view/test_screen/signin_screen2.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
-import 'package:management/view/signIn_screens/signin_screen5.dart';
-import 'package:management/view/signIn_screens/signin_screen6.dart';
+import 'package:management/view/test_screen/signin_screen5.dart';
+import 'package:management/view/test_screen/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 import 'package:management/view/signup_screens/Signup_2.dart';
 import 'package:management/view/signup_screens/profile_screen.dart';
@@ -83,7 +83,8 @@ class MyApp extends StatelessWidget {
              GetPage(name: '/Signin-Emial', page: ()=>SigninemailScreen()),
              GetPage(name: '/Bottom-bar' , page: ()=>BottomBar()),
              ],
-         home: SigninEmailScreen1(),
+        home: SigninemailScreen(),
+         // home: SigninEmailScreen1(),
         // home: SigninScreen2(),
         //      home: Homescreen(),
         //   home: SigninScreen5(),
@@ -91,8 +92,8 @@ class MyApp extends StatelessWidget {
         //  home: SigninEmailScreen1(),
         //      home: SigninScreen2(),
         //  home: WorkProfileScreen(),
-        //  home: SigninScreen5(),
-       //   home: SigninScreen6(),
+        //   home: SigninScreen5(),
+        //   home: SigninScreen6(),
        //    home: SigninphoneScreen1(),
       //   home: SigninphonemainScreen(),
         //    home: SigninphoneOtpScreen(),

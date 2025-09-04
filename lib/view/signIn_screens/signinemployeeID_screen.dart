@@ -10,6 +10,7 @@ import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
+import 'package:management/view/signup_screens/Sign_up1.dart';
 import 'package:management/view/signup_screens/Signup_2.dart';
 
 class SigninemployeeidScreen extends StatefulWidget {
@@ -161,7 +162,6 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           InkWell(
                               onTap: (){
                                 Get.toNamed('Bottom-bar');
-                               // Get.offAndToNamed('Home-Screen-main');
                                 // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                               },
                               child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
@@ -211,10 +211,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-
                               Get.toNamed('Signin-Phone');
                               // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
-
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -242,8 +240,7 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                               ),),
                               InkWell(
                                 onTap: (){
-                                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>Signup2()));
-
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp1()));
                                 },
                                 child: Text('Sign Up Here',style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w500,

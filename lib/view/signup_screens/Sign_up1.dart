@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/Passwordtextfield.dart';
@@ -284,7 +285,9 @@ class _SignUp1State extends State<SignUp1> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Already have an account? ',fontWeight: FontWeight.bold,),
-                TextButton(onPressed: (){},
+                TextButton(onPressed: (){
+                  Get.toNamed('Signin-Emial');
+                },
                     style: TextButton.styleFrom(
                       padding: EdgeInsets.zero,
                       minimumSize: Size(0,0)
