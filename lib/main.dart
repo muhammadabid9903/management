@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
       //   home: ForgetPasswordScreen(),
         // home: PayrollAndTexScreen3(),
       // home: Messages(),
-      home: SigninScreen2(),
+      home: Forgot2View(),
     );
   }
 }
