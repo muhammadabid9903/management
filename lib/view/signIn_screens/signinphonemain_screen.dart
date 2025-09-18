@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/mian_button.dart';
@@ -139,7 +140,8 @@ class _SigninphonemainScreenState extends State<SigninphonemainScreen> {
                           SizedBox(height: 30,),
                           InkWell(
                               onTap: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneOtpScreen()));
+                                // Get.toNamed('Bottom-bar');
+                                 Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphoneOtpScreen()));
                               },
                               child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
@@ -169,14 +171,15 @@ class _SigninphonemainScreenState extends State<SigninphonemainScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                             Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
+                            Get.toNamed('Signin-EmployeId');
+                             // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemployeeidScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
                                 SizedBox(width: 30,),
                                 Image.asset(Appimages.id_icon),
                                 SizedBox(width: 20,),
-                                Text('Sign in With Employee ID',style: GoogleFonts.poppins(
+                                Text('Sign in with Email',style: GoogleFonts.poppins(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
                                   color: Appcolors.maincolor,
@@ -187,7 +190,8 @@ class _SigninphonemainScreenState extends State<SigninphonemainScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                               Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
+                              Get.toNamed('Signin-Emial');
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [

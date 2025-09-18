@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Skip_button.dart';
 import 'package:management/controller/Widgets/mian_button.dart';
@@ -9,6 +10,8 @@ import 'package:management/controller/constant/appicons/appIcons.dart';
 import 'package:management/view/home_screens/homescreen.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
+import 'package:management/view/signup_screens/Sign_up1.dart';
+import 'package:management/view/signup_screens/Signup_2.dart';
 
 class SigninemployeeidScreen extends StatefulWidget {
   const SigninemployeeidScreen({super.key});
@@ -158,7 +161,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 30,),
                           InkWell(
                               onTap: (){
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
+                                Get.toNamed('Bottom-bar');
+                                // Navigator.push(context, MaterialPageRoute(builder: (context)=>Homescreen()));
                               },
                               child: MainButton(color: Color(0xffffffff), fontsize: 13, text:'Signin', )),
                           SizedBox(height: 30,),
@@ -188,7 +192,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
+                             Get.toNamed('Signin-Emial');
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninemailScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -206,8 +211,8 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                           SizedBox(height: 20,),
                           InkWell(
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
-
+                              Get.toNamed('Signin-Phone');
+                              // Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninphonemainScreen()));
                             },
                             child: RowButton(child: Row(
                               children: [
@@ -235,7 +240,7 @@ class _SigninemployeeidScreenState extends State<SigninemployeeidScreen> {
                               ),),
                               InkWell(
                                 onTap: (){
-
+                                   Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUp1()));
                                 },
                                 child: Text('Sign Up Here',style: GoogleFonts.poppins(
                                   fontWeight: FontWeight.w500,

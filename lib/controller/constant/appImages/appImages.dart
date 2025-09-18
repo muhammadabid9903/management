@@ -32,7 +32,7 @@ class Appimages{
  static const String home_background_image4='lib/assets/home_background_image4.png';
  static const String profile_image = 'lib/assets/profile_image.png';
  static const String assets_image = 'lib/assets/assets_image.png';
-
+ static const String notification_image = 'lib/assets/notification_image.png';
 
 
 

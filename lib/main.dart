@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:management/view/Forgot_password/Forgot1_screen.dart';
 import 'package:management/view/Forgot_password/Forgot2_view.dart';
+import 'package:management/view/Notifications_screen/notification_screen.dart';
+import 'package:management/view/home_screens/bottom_navigationBar.dart';
 import 'package:management/view/home_screens/challange_awaiting_screen.dart';
 import 'package:management/view/home_screens/expense_summery_approved_screen4.dart';
 import 'package:management/view/home_screens/expense_summery_rejected.dart';
@@ -12,6 +15,7 @@ import 'package:management/view/home_screens/lets_clock_in_screen.dart';
 import 'package:management/view/home_screens/summery_expense_review_screen4.dart';
 import 'package:management/view/mesages_screens/member_1_chat.dart';
 import 'package:management/view/mesages_screens/messages.dart';
+import 'package:management/view/onbardings/Onboarding_screen.dart';
 import 'package:management/view/profile_screen/change_password_screen1.dart';
 import 'package:management/view/profile_screen/change_password_screen2.dart';
 import 'package:management/view/profile_screen/assets_screen.dart';
@@ -26,11 +30,11 @@ import 'package:management/view/profile_screen/update_profile_screen2.dart';
 import 'package:management/view/signup_screens/My_prof1.dart';
 import 'package:management/view/signup_screens/My_prof_updated.dart';
 import 'package:management/view/signup_screens/Sign_up1.dart';
-import 'package:management/view/signIn_screens/signin_email_screen1.dart';
-import 'package:management/view/signIn_screens/signin_screen2.dart';
+import 'package:management/view/test_screen/signin_email_screen1.dart';
+import 'package:management/view/test_screen/signin_screen2.dart';
 import 'package:management/view/signIn_screens/signinemail_screen.dart';
-import 'package:management/view/signIn_screens/signin_screen5.dart';
-import 'package:management/view/signIn_screens/signin_screen6.dart';
+import 'package:management/view/test_screen/signin_screen5.dart';
+import 'package:management/view/test_screen/signin_screen6.dart';
 import 'package:management/view/signIn_screens/signinemployeeID_screen.dart';
 import 'package:management/view/signup_screens/Signup_2.dart';
 import 'package:management/view/signup_screens/profile_screen.dart';
@@ -38,8 +42,6 @@ import 'package:management/view/signup_screens/work_profile_screen.dart';
 import 'package:management/view/test_screen/signinphone_screen1.dart';
 import 'package:management/view/signIn_screens/signinphonemain_screen.dart';
 import 'package:management/view/signIn_screens/signinphone_otp_screen.dart';
-import 'package:management/view/starting_screens/Onboarding_screen/Onboarding_screen.dart';
-import 'package:management/view/starting_screens/Onboarding_screen/practice.dart';
 
 void main() {
   runApp(const MyApp());
@@ -51,27 +53,50 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return
+      GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+    //   // title: 'Flutter Demo',
+    //   // theme: ThemeData(
+    //   //   colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+    //   //   useMaterial3: true,
 
-
-           // home: SigninEmailScreen1(),
-         // home: SigninScreen2(),
-      //      home: Homescreen(),
-      //   home: SigninScreen5(),
-      //    home: SigninScreen6(),
-      //  home: SigninScreen1(),
-      //  home: SigninScreen2(),
-      //  home: WorkProfileScreen(),
-      //  home: SigninScreen5(),
-      //   home: SigninScreen6(),
-      //    home: SigninphoneScreen1(),
+                // initialRoute: '/Signin-Emial',
+           getPages:[
+             GetPage(name: '/Home-Screen-main', page: ()=>Homescreen()),
+             GetPage(name: '/Home-2', page: ()=>LetsClockInScreen()),
+             GetPage(name: '/Home-3', page: ()=>ChallangeAwaitingScreen()),
+             GetPage(name: '/Home-4.1', page: ()=>SummeryExpenseReviewScreen4()),
+             GetPage(name: '/Home-4.2', page: ()=>ExpenseSummeryApprovedScreen4()),
+             GetPage(name: '/Home-4.3', page: ()=>ExpenseSummeryRejected()),
+             GetPage(name: '/Home-5.1', page: ()=>LeaveSummeryReview()),
+             GetPage(name: '/Home-5.2', page: ()=>LeaveSummeryApproved()),
+             GetPage(name: '/Home-5.3', page: ()=>LeaveSummeryRejected()),
+             GetPage(name: '/SignIn_otp', page: ()=>SigninphoneOtpScreen()),
+             GetPage(name: '/Onboarding-screen', page: ()=>MyOnb1()),
+             GetPage(name: '/Sign-in', page: ()=>SigninEmailScreen1()),
+             GetPage(name: '/Messages-Screen', page: ()=>Messages()),
+             GetPage(name: '/Botton-NavigationBar', page: ()=>BottomBar()),
+             GetPage(name: '/Notification-Screen', page: ()=>NotificationScreen()),
+             GetPage(name: '/Signin-EmployeId', page: ()=>SigninemployeeidScreen()),
+             GetPage(name: '/Signin-Phone', page: ()=>SigninphoneScreen1()),
+             GetPage(name: '/Signin-Emial', page: ()=>SigninemailScreen()),
+             GetPage(name: '/Bottom-bar' , page: ()=>BottomBar()),
+             ],
+        home: SigninemailScreen(),
+         // home: SigninEmailScreen1(),
+        // home: SigninScreen2(),
+        //      home: Homescreen(),
+        //   home: SigninScreen5(),
+        //    home: SigninScreen6(),
+        //  home: SigninEmailScreen1(),
+        //      home: SigninScreen2(),
+        //  home: WorkProfileScreen(),
+        //   home: SigninScreen5(),
+        //   home: SigninScreen6(),
+       //    home: SigninphoneScreen1(),
       //   home: SigninphonemainScreen(),
+<<<<<<< HEAD
       //    home: SigninphoneOtpScreen(),
       //    home: SigninphoneScreen2(),
       //  home: SinginStartScreen(),
@@ -104,6 +129,48 @@ class MyApp extends StatelessWidget {
         // home: PayrollAndTexScreen3(),
       // home: Messages(),
       home: Forgot2View(),
+=======
+        //    home: SigninphoneOtpScreen(),
+       //    home: SigninphoneScreen2(),
+    //     home: SinginStartScreen(),
+    //       home: SignupProfileScreen(),
+    //      home: ProfileScreen(),
+    //       home:  SigninemailScreen(),
+    //     home: SigninemployeeidScreen(),
+    //          home: SignUp1(),
+    //        home: SignUp1(),
+    //          home: WorkProfileScreen(),
+    //     home: SigninphoneOtpScreen(),
+    //     home: LetsClockInScreen(),
+    //     home: ChallangeAwaitingScreen(),
+    //       home: SummeryExpenseReviewScreen4(),
+    //       home: ExpenseSummeryApprovedScreen4(),
+    //       home: ExpenseSummeryRejected(),
+    //        home: LeaveSummeryReview(),
+    //       home: LeaveSummeryApproved(),
+    //       home: LeaveSummeryRejected(),
+    //            home: Signup2(),
+    //     home: PersonalDataScreen(),
+    //      home: UpdateProfileScreeen1(),
+    //      home: UpdateProfileScreeen2(),
+    //       home: AssetsScreen(),
+    //      home: PayrollTaxScreen(),
+    //      home: PayrollAndTaxScreen2(),
+    //        home: ChangePasswordScreen1(),
+    //      home: ChangePasswordScreen2(),
+    //      home: ForgetPasswordScreen(),
+    //        home: PayrollAndTexScreen3(),
+    //           home: Messages(),
+    //        home: Member1Chat(),
+    //           home: NotificationScreen(),
+    //                 home: Homescreen(),
+    //         home: WorkProfileScreen(),
+    //             home: WorkProfileScreen1(),
+    //      home: MyProfUpdated(),
+    //       home: MyOnb1(),
+
+           // home: BottomBar(),
+>>>>>>> 18d3dea517e8c5f47561a76df9bc01deccbb2856
     );
   }
 }

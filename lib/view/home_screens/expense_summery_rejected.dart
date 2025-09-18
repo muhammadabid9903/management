@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:management/controller/Widgets/Mian_button.dart';
 import 'package:management/controller/Widgets/text_Button.dart';
@@ -226,35 +227,38 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   InkWell(
-                    onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>SummeryExpenseReviewScreen4()));
-                    },
-                    child: TextButon
-                      (child:
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        Text('Review',style: GoogleFonts.inter(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: Appcolors.white_color,
-                        ),),
+                    onTap: ()
+              {
+              Get.toNamed('Home-4.1');
+              },
+                    child:
+                    TextButon(
+                      child:
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Text('Review',style: GoogleFonts.inter(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w500,
+                            color: Appcolors.white_color,
+                          ),),
 
-                        CircleAvatar(
-                          backgroundColor: Appcolors.orang_light,
-                          radius: 9,
-                          child: Center(
-                            child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
-                          ),
-                        )
-                        // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
-                      ],
-                    ),
+                          CircleAvatar(
+                            backgroundColor: Appcolors.orang_light,
+                            radius: 9,
+                            child: Center(
+                              child: Text('3',style: TextStyle(color: Appcolors.white_color,fontSize: 10,),),
+                            ),
+                          )
+                          // Image.asset('lib/assets/circle_numeric3_icon.png',color: Appcolors.orang_light,)
+                        ],
+                      ),
                     ),
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
+                      Get.toNamed('Home-4.2');
+                      // Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryApprovedScreen4()));
                     },
                     child: Row(
                       children: [
@@ -270,7 +274,7 @@ class _ExpenseSummeryRejectedState extends State<ExpenseSummeryRejected> {
                   ),
                   InkWell(
                     onTap: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ExpenseSummeryRejected()));
+                       Get.toNamed('Home-4.3');
                     },
                     child: Row(
                       children: [

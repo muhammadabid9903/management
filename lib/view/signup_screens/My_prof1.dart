@@ -10,14 +10,14 @@ import '../../controller/Widgets/Mian_button.dart';
 import '../../controller/Widgets/Skip_button.dart';
 import '../../controller/Widgets/Textwidget.dart';
 
-class WorkProfileScreen extends material.StatefulWidget {
-  const WorkProfileScreen({super.key});
+class WorkProfileScreen1 extends material.StatefulWidget {
+  const WorkProfileScreen1({super.key});
 
   @override
-  material.State<WorkProfileScreen> createState() => _WorkProfileScreenState();
+  material.State<WorkProfileScreen1> createState() => _WorkProfileScreen1State();
 }
 
-class _WorkProfileScreenState extends material.State<WorkProfileScreen> {
+class _WorkProfileScreen1State extends material.State<WorkProfileScreen1> {
   @override
   material.Widget build(material.BuildContext context) {
     return material.Scaffold(

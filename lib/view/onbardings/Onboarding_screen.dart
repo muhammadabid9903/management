@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:management/view/test_screen/signin_email_screen1.dart';
 
 import '../../../controller/Widgets/mian_button.dart';
 import '../../../controller/Widgets/skip_button.dart';
@@ -53,12 +55,17 @@ class _MyOnb1State extends State<MyOnb1> {
               SizedBox(height: 30,),
               InkWell(
                   onTap: (){
+
+                   // Get.offAndToNamed('Sign-in');
+                     Navigator.push(context, MaterialPageRoute(builder: (context)=>SigninEmailScreen1()));
                     nextPage();
                     print('-------------1');
                   },
-                  child: MainButton(color: Colors.white, fontsize: 14, text: 'Next',fontWeight: FontWeight.bold,)),
+                  child: MainButton(color: Colors.white, fontsize: 14,
+                    text: 'Next',fontWeight: FontWeight.bold,)
+              ),
               SizedBox(height: 15,),
-              Skipbutton(text: 'Skip', fontsize: 14, color:Color(0xff5B2ED4), )
+              Skipbutton(text: 'Skip', fontsize: 14, color:Color(0xff5B2ED4), ),
             ],
           ),
         ),
@@ -107,9 +114,12 @@ class _MyOnb1State extends State<MyOnb1> {
                           //    crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
 
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Welcome to Workmate!',fontWeight: FontWeight.bold,),
+                            Mytextwidget(fontcolor: Colors.black, fontsize: 20,
+                              text: 'Welcome to Workmate!',fontWeight: FontWeight.bold,),
                             SizedBox(height: 5,),
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Make Smart Decisions! Set clear timelines for\n'
+                            Mytextwidget(
+                              fontcolor: Colors.black, fontsize: 12,
+                              text: 'Make Smart Decisions! Set clear timelines for\n'
                                 '  projects and celebrate your achievements!',fontWeight: FontWeight.normal,),
                           ],
                         ),
@@ -129,9 +139,11 @@ class _MyOnb1State extends State<MyOnb1> {
                         padding: const EdgeInsets.only(top: 470,left: 30),
                         child: Column(
                           children: [
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Manage Stress Effectively',fontWeight: FontWeight.bold,),
+                            Mytextwidget(fontcolor: Colors.black, fontsize: 20,
+                              text: 'Manage Stress Effectively',fontWeight: FontWeight.bold,),
                             SizedBox(height: 5,),
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Stay Balanced! Track you workload and maintain a\n'
+                            Mytextwidget(fontcolor: Colors.black, fontsize: 12,
+                              text: 'Stay Balanced! Track you workload and maintain a\n'
                                 '                healthy stress level with ease',fontWeight: FontWeight.normal,),
                           ],
                         ),
@@ -149,20 +161,21 @@ class _MyOnb1State extends State<MyOnb1> {
                         padding: const EdgeInsets.only(top: 470,left: 30),
                         child: Column(
                           children: [
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 20, text: 'Manage Stress Effectively',fontWeight: FontWeight.bold,),
+                            Mytextwidget(fontcolor: Colors.black, fontsize: 20,
+                              text: 'Manage Stress Effectively',fontWeight: FontWeight.bold,),
                             SizedBox(height: 5,),
-                            Mytextwidget(fontcolor: Colors.black, fontsize: 12, text: 'Stay Balanced! Track you workload and maintain a\n'
+                            Mytextwidget(fontcolor: Colors.black, fontsize: 12,
+                              text: 'Stay Balanced! Track you workload and maintain a\n'
                                 '                healthy stress level with ease',fontWeight: FontWeight.normal,),
                           ],
                         ),
                       ),
-                    ],),
-
+                    ],
+                  ),
                 ]
             ),
           ]
       ),
-
     );
   }
 }
